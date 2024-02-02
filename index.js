@@ -3,7 +3,7 @@ String.prototype.replaceAt = function(index, replacement) {
 	return this.substring(0, index) + replacement + this.substring(index + 1);
 }
 
-
+// funcion de codificar
 function encriptar(){
   if(frase.value == ""){ alert("Porfavor ingrese una palabra"); } else {    
     let ini=0;
@@ -20,18 +20,19 @@ function encriptar(){
       fe=fe+enc [ini];
       ini = ini + 1;
     }
-    let parrafo = document.querySelector('label2');  //ayuda a conectar elementos espesificos del html
+    let parrafo = document.querySelector('.codificar');  //ayuda a conectar elementos espesificos del html
     parrafo.innerHTML= fe;
 	  //alert(fe);
   }
 }
 
 
+// funcion de decodificar
 function desencriptar(){
   let fd= '';
   if(frase.value == ""){ alert("Porfavor ingrese una palabra codificada"); } else {
     fd=frase.value.replaceAll("ai","a").replaceAll("enter","e").replaceAll("imes","i").replaceAll("ober","o").replaceAll("ufat","u");
-    let parrafo = document.querySelector('label2');  //ayuda a conectar elementos espesificos del html
+    let parrafo = document.querySelector('.codificar');  //ayuda a conectar elementos espesificos del html
     parrafo.innerHTML= fd;
    // alert(fd);
   }

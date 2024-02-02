@@ -1,36 +1,35 @@
 body {
-    background: darkslategray;
-    font-family: 'Poppins', sans-serif;
+    background: darkslategray; /* defino qun color de fondo */
+    font-family: 'Poppins', sans-serif; 
 }
 
-.footer {
-    background-color: darkslategray;
-    padding: 1em 0;
-    font-size: 24px;
-    color: #0a0b0b;
+/* defino que solo la clase tendra tendra ciertas caracteristicas */
+.copyright {
+    font-size: 24px; /* defino el tamaño del texto*/
+    color: #0a0b0b; /* defino el color del texto*/
     position: absolute;
     bottom: 0;
-    width: 15%;
+    width: 35%;  /* ajusto el tamaño que tendra esta clase */
+    font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
 }
 
-.label {
-    font-size: 24px;  
-}
-
+/* defino que la id tendra tendra ciertas caracteristicas */
 #form {
     width: 400px;
     margin: 20vh auto 0 auto;
-    padding: 20px;
+    padding: 20px; /* le indico que ocupe un relleno de 20px para todo los lados */
     background-color: whitesmoke;
     border-radius: 4px;
     font-size: 12px;
 }
 
+/* defino que la etiqueta "h1" que hereda la id tendra tendra ciertas caracteristicas */
 #form h1 {
     color: #0f2027;
     text-align: center;
 }
 
+/* defino que la etiqueta "button" que hereda la id tendra tendra ciertas caracteristicas */
 #form button {
     padding: 10px;
     margin-top: 10px;
@@ -41,21 +40,28 @@ body {
     border-radius: 4px;
 }
 
-.input-control {
+/* defino que solo la clase tendra tendra ciertas caracteristicas */
+.inicio {
     font-size: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.input-control input {
+.inicio label{
+    padding: 0 0 15px 0; /* le indico que ocupe un margen externo (arriba, derecha, abajo y izquierda) */
+}
+
+.inicio input {
     border: 2px solid #f0f0f0;
 	border-radius: 4px;
-	display: block;
-	font-size: 12px;
+	font-size: 15px;
 	padding: 10px;
 	width: 100%;
 }
 
-.input-control input:focus {
-    outline: 0;
+/* defino que solo la clase tendra tendra ciertas caracteristicas */
+.codificar{
+    font-size: 24px;  /* defino el tamaño del texto*/
+    padding: 15px 0 15px 0; /* le indico que ocupe un margen externo (arriba, derecha, abajo y izquierda) */
+    color: rgb(90, 86, 86);
 }
