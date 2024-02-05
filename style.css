@@ -14,7 +14,7 @@ body {
 }
 
 /* defino que la id tendra tendra ciertas caracteristicas */
-#form {
+form {
     width: 400px;
     margin: 20vh auto 0 auto;
     padding: 20px; /* le indico que ocupe un relleno de 20px para todo los lados */
@@ -23,14 +23,14 @@ body {
     font-size: 12px;
 }
 
-/* defino que la etiqueta "h1" que hereda la id tendra tendra ciertas caracteristicas */
-#form h1 {
+/* defino que solo la etiqueta "h1" del bloque con la id tendra tendra ciertas caracteristicas */
+form h1 {
     color: #0f2027;
     text-align: center;
 }
 
-/* defino que la etiqueta "button" que hereda la id tendra tendra ciertas caracteristicas */
-#form button {
+/* defino que solo la etiqueta "button" del bloque con la id tendra tendra ciertas caracteristicas */
+form button {
     padding: 10px;
     margin-top: 10px;
     width: 100%;
@@ -40,17 +40,19 @@ body {
     border-radius: 4px;
 }
 
-/* defino que solo la clase tendra tendra ciertas caracteristicas */
+/* defino que solo la clase "inicio" tendra tendra ciertas caracteristicas */
 .inicio {
     font-size: 20px;
     display: flex;
     flex-direction: column;
 }
 
+/* defino que solo etiqueta "label" del bloque con la clase "inicio" tendra tendra ciertas caracteristicas */
 .inicio label{
     padding: 0 0 15px 0; /* le indico que ocupe un margen externo (arriba, derecha, abajo y izquierda) */
 }
 
+/* defino que solo etiqueta "input" del bloque con la clase "inicio" tendra tendra ciertas caracteristicas */
 .inicio input {
     border: 2px solid #f0f0f0;
 	border-radius: 4px;
@@ -61,7 +63,7 @@ body {
 
 /* defino que solo la clase tendra tendra ciertas caracteristicas */
 .codificar{
-    font-size: 24px;  /* defino el tamaño del texto*/
-    padding: 15px 0 15px 0; /* le indico que ocupe un margen externo (arriba, derecha, abajo y izquierda) */
+    padding: 12px 0; /* le indico que ocupe un margen externo vertical (arriba y abajo) y horizontal (derecha y izquierda) */
+    font-size: 22px;  /* defino el tamaño del texto*/
     color: rgb(90, 86, 86);
 }
