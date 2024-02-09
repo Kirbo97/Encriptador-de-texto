@@ -1,4 +1,4 @@
-<!--<!DOCTYPE html>    Define que la pagina esta en html5 -->
+<!DOCTYPE html>   
 
 <html lang="es">  <!-- Define el idioma que se detectara en la pagina -->
 
@@ -9,24 +9,28 @@
         <script type="text/javascript" src="./index.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene las funciones de encriptar y desencriptar de la pagina-->
     </head>
     
-    <body>
-        <div class="container">
-            <form>
-                <h1>Encriptador / Desencriptador</h1>
+    <body><!-- es el cuerpo de la pagina web -->
+        <div class="container"> <!-- permite organizar en grupos los campos de una pagina y tendra una clase para darle diseño a su contenido-->
+
+            <form> <!-- Para crear formulario en mi pagina -->
+                <h1>Encriptador / Desencriptador</h1> <!-- Para titulo que se visualisa -->
                 <div class="inicio">
-                    <label for="frase">Ingrese una palabra</label>
-                    <input id="frase" name="frase" type="text">   
+                    <!-- Usar el mismo nombre del for e id ayuda a que esten entrelasados -->
+                    <label for="frase">Ingrese una palabra</label> <!-- muestra texto en pantalla de un formulario-->
+                    <input id="frase" name="frase" type="text">   <!-- crea un cuadro para ingresar texto y que sea obligatorio de llenar dentro de un formulario-->
                 </div>
                 
                 <div class="codificar">
                     <label>!sin codificar</label>
                 </div>
-                <button type="button" onclick="encriptar()">Encriptar</button>
+                <button type="button" onclick="encriptar()">Encriptar</button> <!-- crea un boton que al ser presionado va a ejecutar una funcion del js-->
                 <button type="button" onclick="desencriptar()">Desencriptar</button>
             </form>
         </div>
         <footer>
             <p class="copyright">© Copyright Fabian Daquilema - 2020</p>
+            
+            <img src="Kirbo.png"  alt="logo" class="logo"> <!-- Conecta el archivo jpg para ser usado en la pagina y le doy un nombre a esa imagen-->
         </footer>
     </body>
 

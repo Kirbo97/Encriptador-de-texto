@@ -4,16 +4,6 @@ body {
     font-family: 'Poppins', sans-serif; /* defino un tipo de texto */
 }
 
-/* defino que solo la clase tendra tendra ciertas caracteristicas */
-.copyright {
-    font-size: 24px; /* defino el tamaño del texto*/
-    color: #0a0b0b; /* defino el color del texto*/
-    position: absolute; /* el elemento pierde su puesto en el flujo del documento pero se desplaza según los valores de top, right, bottom y left */
-    bottom: 0; /* el elemento se desplazara abajo */
-    width: 35%;  /* ajusto el tamaño que tendra esta clase */
-    font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
-}
-
 /* defino que la etiqueta "form" tendra tendra ciertas caracteristicas */
 form {
     width: 400px; /* ajusto el tamaño que tendra esta clase */
@@ -66,7 +56,7 @@ form button:hover {
     border: 2px solid #f0f0f0; /* le indico que los bordes tengan un grosor de 2px, el tipo de borde y el color */
 	border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
 	font-size: 15px; /* defino el tamaño del texto*/
-	padding: 10px; /* le indico que ocupe un relleno de 20px para todo los lados */
+	padding: 10px 0; /* le indico que ocupe un margen externo vertical (arriba y abajo) y horizontal (derecha y izquierda) */
 	width: 100%; /* ajusto el tamaño que tendra esta clase */
 }
 
@@ -75,4 +65,22 @@ form button:hover {
     padding: 12px 0; /* le indico que ocupe un margen externo vertical (arriba y abajo) y horizontal (derecha y izquierda) */
     font-size: 22px;  /* defino el tamaño del texto*/
     color: rgb(90, 86, 86); /* defino el tamaño del texto*/
+}
+
+
+/* defino que solo la clase tendra tendra ciertas caracteristicas */
+.copyright {
+    font-size: 24px; /* defino el tamaño del texto*/
+    color: #0a0b0b; /* defino el color del texto*/
+    position: absolute; /* el elemento pierde su puesto en el flujo del documento pero se desplaza según los valores de top, right, bottom y left o por el pading*/
+    bottom: 0; /* el elemento se desplazara abajo */
+    width: 35%;  /* ajusto el tamaño que tendra esta clase */
+    font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
+}
+
+/* defino que solo la clase "inicio" tendra tendra ciertas caracteristicas */
+.logo {
+    width: 45px; /* ajusto el tamaño que tendra esta clase */
+    position: absolute; /* el elemento pierde su puesto en el flujo del documento pero se desplaza según los valores de top, right, bottom y left o por el pading*/
+    padding: 11.5% 0 0 29%; /* le indico que ocupe un margen externo (arriba, derecha, abajo y izquierda) */
 }
