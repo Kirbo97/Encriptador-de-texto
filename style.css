@@ -1,69 +1,78 @@
+/* defino que la etiqueta "body" tendra tendra ciertas caracteristicas */
 body {
     background: darkslategray; /* defino qun color de fondo */
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif; /* defino un tipo de texto */
 }
 
 /* defino que solo la clase tendra tendra ciertas caracteristicas */
 .copyright {
     font-size: 24px; /* defino el tamaño del texto*/
     color: #0a0b0b; /* defino el color del texto*/
-    position: absolute;
-    bottom: 0;
+    position: absolute; /* el elemento pierde su puesto en el flujo del documento pero se desplaza según los valores de top, right, bottom y left */
+    bottom: 0; /* el elemento se desplazara abajo */
     width: 35%;  /* ajusto el tamaño que tendra esta clase */
     font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
 }
 
-/* defino que la id tendra tendra ciertas caracteristicas */
+/* defino que la etiqueta "form" tendra tendra ciertas caracteristicas */
 form {
-    width: 400px;
-    margin: 20vh auto 0 auto;
+    width: 400px; /* ajusto el tamaño que tendra esta clase */
+    margin: 20vh auto 0 auto; /* le indico que ocupe un margen externo de 20 de arriba, auto derecha, 0 abajo y auto para izquierda */
     padding: 20px; /* le indico que ocupe un relleno de 20px para todo los lados */
-    background-color: whitesmoke;
-    border-radius: 4px;
-    font-size: 12px;
+    background-color: whitesmoke; /* defino un color de fondo */
+    border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
+    font-size: 12px; /* defino el tamaño del texto*/
 }
 
-/* defino que solo la etiqueta "h1" del bloque con la id tendra tendra ciertas caracteristicas */
+/* defino que solo la etiqueta "h1" dentro del bloque con la etiqueta "form" tendra tendra ciertas caracteristicas */
 form h1 {
     color: #0f2027;
     text-align: center;
 }
 
-/* defino que solo la etiqueta "button" del bloque con la id tendra tendra ciertas caracteristicas */
+/* defino que solo la etiqueta "button" dentro del bloque con la etiqueta "form" tendra tendra ciertas caracteristicas */
 form button {
-    padding: 10px;
-    margin-top: 10px;
-    width: 100%;
-    color: white;
-    background-color: rgb(41, 57, 194);
-    border: none;
-    border-radius: 4px;
+    padding: 10px; /* le indico que ocupe un relleno de 20px para todo los lados */
+    margin-top: 10px; /* le doy un margen superior*/
+    margin-bottom: 2%; /* le doy un margen inferior*/
+    width: 100%; /* ajusto el tamaño que tendra esta clase */
+    color: white; /* defino el color del texto */
+    background-color: rgb(41, 57, 194); /* defino un color de fondo */
+    border: none; /* defino que no tenga bordes */
+    border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
+    transition: 800ms; /* el doy un tiempo de transicion para cuando va a sufrir un cambio fisico se tome ese tiempo*/
+    cursor:pointer; /* el maus cambiara al estar sobre el*/
+}
+
+/* defino que solo la etiqueta "button" con propiedad "hover" (detecta cuando el maus este en sima) dentro del bloque con la etiqueta "form", solo ejecute las caracteristicas mientras que el maus este sobre el */
+form button:hover {
+    box-shadow: 4px 4px 30px 2px #000000; /* el doy un formato al borde que en este caso es de sombra 10 desplazamiento-x | 10 desplazamiento-y | 30 radio de desenfoque | 15 radio de extensión | color*/
 }
 
 /* defino que solo la clase "inicio" tendra tendra ciertas caracteristicas */
 .inicio {
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
+    font-size: 20px; /* defino el tamaño del texto*/
+    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y pero estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño proporcionado por bloque en el que se encuentran*/
+    flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
 }
 
-/* defino que solo etiqueta "label" del bloque con la clase "inicio" tendra tendra ciertas caracteristicas */
+/* defino que solo etiqueta "label" dentro del bloque con la clase "inicio" tendra tendra ciertas caracteristicas */
 .inicio label{
     padding: 0 0 15px 0; /* le indico que ocupe un margen externo (arriba, derecha, abajo y izquierda) */
 }
 
-/* defino que solo etiqueta "input" del bloque con la clase "inicio" tendra tendra ciertas caracteristicas */
+/* defino que solo etiqueta "input" dentro del bloque con la clase "inicio" tendra tendra ciertas caracteristicas */
 .inicio input {
-    border: 2px solid #f0f0f0;
-	border-radius: 4px;
-	font-size: 15px;
-	padding: 10px;
-	width: 100%;
+    border: 2px solid #f0f0f0; /* le indico que los bordes tengan un grosor de 2px, el tipo de borde y el color */
+	border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
+	font-size: 15px; /* defino el tamaño del texto*/
+	padding: 10px; /* le indico que ocupe un relleno de 20px para todo los lados */
+	width: 100%; /* ajusto el tamaño que tendra esta clase */
 }
 
 /* defino que solo la clase tendra tendra ciertas caracteristicas */
 .codificar{
     padding: 12px 0; /* le indico que ocupe un margen externo vertical (arriba y abajo) y horizontal (derecha y izquierda) */
     font-size: 22px;  /* defino el tamaño del texto*/
-    color: rgb(90, 86, 86);
+    color: rgb(90, 86, 86); /* defino el tamaño del texto*/
 }
