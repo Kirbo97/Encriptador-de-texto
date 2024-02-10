@@ -17,14 +17,15 @@
                 <div class="inicio">
                     <!-- Usar el mismo nombre del for e id ayuda a que esten entrelasados -->
                     <label for="frase">Ingrese una palabra</label> <!-- muestra texto en pantalla de un formulario-->
-                    <input id="frase" name="frase" type="text">   <!-- crea un cuadro para ingresar texto y que sea obligatorio de llenar dentro de un formulario-->
+                    <input id="frase" name="frase" type="text" onkeyup="remplazar(this)">   <!-- crea un cuadro para ingresar texto y que sea obligatorio de llenar dentro de un formulario, ademas tendra una funcion que se estara cumpliendo consecutivamente-->
                 </div>
                 
                 <div class="codificar">
-                    <label>!sin codificar</label>
+                    <label id="texto-muestra">!sin codificar</label>
                 </div>
-                <button type="button" onclick="encriptar()">Encriptar</button> <!-- crea un boton que al ser presionado va a ejecutar una funcion del js-->
-                <button type="button" onclick="desencriptar()">Desencriptar</button>
+                <button type="button" onclick="encriptar()" id="enc">Encriptar</button> <!-- crea un boton que al ser presionado va a ejecutar una funcion del js-->
+                <button type="button" onclick="copiar()" disabled="disabled" id="cop">Copiar</button>
+                <button type="button" onclick="desencriptar()" disabled="disabled" id="desen">Desencriptar</button>
             </form>
         </div>
         <footer>

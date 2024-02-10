@@ -21,7 +21,7 @@ form h1 {
 }
 
 /* defino que solo la etiqueta "button" dentro del bloque con la etiqueta "form" tendra tendra ciertas caracteristicas */
-form button {
+form button:enabled {
     padding: 10px; /* le indico que ocupe un relleno de 20px para todo los lados */
     margin-top: 10px; /* le doy un margen superior*/
     margin-bottom: 2%; /* le doy un margen inferior*/
@@ -34,9 +34,20 @@ form button {
     cursor:pointer; /* el maus cambiara al estar sobre el*/
 }
 
-/* defino que solo la etiqueta "button" con propiedad "hover" (detecta cuando el maus este en sima) dentro del bloque con la etiqueta "form", solo ejecute las caracteristicas mientras que el maus este sobre el */
-form button:hover {
+/* defino que solo la etiqueta "button" con propiedad "hover" (detecta cuando el maus este en sima) y propiedad "enabled" (aplica a todo lo que este abilitado) dentro del bloque con la etiqueta "form", solo ejecute las caracteristicas mientras que el maus este sobre el */
+form button:hover:enabled {
     box-shadow: 4px 4px 30px 2px #000000; /* el doy un formato al borde que en este caso es de sombra 10 desplazamiento-x | 10 desplazamiento-y | 30 radio de desenfoque | 15 radio de extensión | color*/
+}
+
+form button:disabled {
+    padding: 10px; /* le indico que ocupe un relleno de 20px para todo los lados */
+    margin-top: 10px; /* le doy un margen superior*/
+    margin-bottom: 2%; /* le doy un margen inferior*/
+    width: 100%; /* ajusto el tamaño que tendra esta clase */
+    color: white; /* defino el color del texto */
+    background-color: rgb(88, 93, 136); /* defino un color de fondo */
+    border: none; /* defino que no tenga bordes */
+    border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
 }
 
 /* defino que solo la clase "inicio" tendra tendra ciertas caracteristicas */
@@ -82,5 +93,5 @@ form button:hover {
 .logo {
     width: 45px; /* ajusto el tamaño que tendra esta clase */
     position: absolute; /* el elemento pierde su puesto en el flujo del documento pero se desplaza según los valores de top, right, bottom y left o por el pading*/
-    padding: 11.5% 0 0 29%; /* le indico que ocupe un margen externo (arriba, derecha, abajo y izquierda) */
+    padding: 8% 0 0 29%; /* le indico que ocupe un margen externo (arriba, derecha, abajo y izquierda) */
 }
