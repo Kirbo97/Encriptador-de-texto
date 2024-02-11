@@ -8,10 +8,10 @@ let bol=0;
 
 //creo una funcion que limitara los caracteres a usar en mi cuadro de texto
 function remplazar(elemento){
-  let texto = elemento.value
-  texto = texto.split(/[^a-z, ]+/g) //permito los caracteres de la (a - z) y el espacio en blanco 
-  texto = texto.join("")
-  elemento.value = texto
+  let texto = elemento.value;
+  texto = texto.split(/[^a-z, ]+/g); //permito los caracteres de la (a - z) y el espacio en blanco 
+  texto = texto.join("");
+  elemento.value = texto;
 }
 
 // creo funcion de codificar
@@ -58,7 +58,6 @@ function copiar(){
     btnenc.disabled = true;
     parrafo.innerHTML= '!Sin decodificar'; 
 
-
   } else if (bol==2) {  //si ya decodifico avilita el boton de codificar
     let btnenc = document.getElementById('enc');
     btnenc.disabled = false;
@@ -85,7 +84,7 @@ function desencriptar(){
   parrafo.innerHTML= fd; //la variable conectada a la clase remplasara su texto visual por el contenido de la variable "fd"
   parrafo.value=fd; //guardo el contenido para ser usado mas adelante
   bol=2;
-
+  
     if(fd != "!Sin decodificar"){   //si el programa codifico la frase, el boton se avilita
       let btncop = document.getElementById('cop');
       btncop.disabled = false;
