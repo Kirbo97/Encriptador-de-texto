@@ -16,10 +16,9 @@ function remplazar(elemento){
 
 // creo funcion de codificar
 function encriptar(){
-  let fe = '!sin codificar'; //creo la variable de texto vacio para contener la frase modificado
+  let fe = '!Sin codificar';
   if(frase.value == ""){ // valido si el contenido del imput esta vacio o no a traves de la id
-    alert("Porfavor ingrese una palabra"); 
-    fe = '!sin codificar';
+    alert("Porfavor ingrese una palabra para codificar"); 
   } else {    
     let ini=0;
     var cant = frase.value.length; // calculo la cantidad de carracteres que tiene
@@ -42,7 +41,7 @@ function encriptar(){
   parrafo.value=fe; //guardo el contenido para ser usado mas adelante
   bol=1;
 
-  if(fe != "!sin codificar"){   //si el programa codifico la frase, el boton se avilita
+  if(fe != "!Sin codificar"){   //si el programa codifico la frase, el boton se avilita
     let btncop = document.getElementById('cop');
     btncop.disabled = false;
   }
@@ -57,31 +56,37 @@ function copiar(){
     btndes.disabled = false;
     let btnenc = document.getElementById('enc');
     btnenc.disabled = true;
+    parrafo.innerHTML= '!Sin decodificar'; 
+
+
   } else if (bol==2) {  //si ya decodifico avilita el boton de codificar
     let btnenc = document.getElementById('enc');
     btnenc.disabled = false;
     let btndes = document.getElementById('desen');
     btndes.disabled = true;
+    parrafo.innerHTML= '!Sin codificar'; 
   }
     let btncop = document.getElementById('cop');
     btncop.disabled = true;
     frase.value= parrafo.value; //el cuadro de texto remplasara su contenido con lo que tenga el label
+    alert("La palabra se copio con éxito"); 
 }
 
 // funcion de decodificar
 function desencriptar(){
-  let fd = '!sin codificar'; //creo la variable de texto vacio para contener la frase modificado
+  let fd = '!Sin decodificar'; //creo la variable de texto vacio para contener la frase modificado
   if(frase.value == ""){  // valido si el contenido del imput esta vacio o no a traves de la id
     alert("Porfavor ingrese una palabra codificada"); 
-  } 
-
+  } else {
     fd=frase.value.replaceAll("ai","a").replaceAll("enter","e").replaceAll("imes","i").replaceAll("ober","o").replaceAll("ufat","u"); // mi variable tendra la frase y realisara un remplaso total de todas las coincidencia que tenga
-  let parrafo = document.querySelector('.codificar');  //la variable se conectara al elementos espesificos del html el cual es el elemento que tenga o este dentro de la clase codificar
-    parrafo.innerHTML= fd; //la variable conectada a la clase remplasara su texto visual por el contenido de la variable "fd"
-    parrafo.value=fd; //guardo el contenido para ser usado mas adelante
-    bol=2;
+  }
 
-    if(fd != "!sin codificar"){   //si el programa codifico la frase, el boton se avilita
+  let parrafo = document.querySelector('.codificar');  //la variable se conectara al elementos espesificos del html el cual es el elemento que tenga o este dentro de la clase codificar
+  parrafo.innerHTML= fd; //la variable conectada a la clase remplasara su texto visual por el contenido de la variable "fd"
+  parrafo.value=fd; //guardo el contenido para ser usado mas adelante
+  bol=2;
+
+    if(fd != "!Sin decodificar"){   //si el programa codifico la frase, el boton se avilita
       let btncop = document.getElementById('cop');
       btncop.disabled = false;
     }

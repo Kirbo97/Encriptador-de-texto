@@ -34,11 +34,12 @@ form button:enabled {
     cursor:pointer; /* el maus cambiara al estar sobre el*/
 }
 
-/* defino que solo la etiqueta "button" con propiedad "hover" (detecta cuando el maus este en sima) y propiedad "enabled" (aplica a todo lo que este abilitado) dentro del bloque con la etiqueta "form", solo ejecute las caracteristicas mientras que el maus este sobre el */
+/* defino que solo la etiqueta "button" con propiedad "hover" (detecta cuando el maus este en sima) y propiedad "enabled" (aplica a todo lo que este abilitado) dentro del bloque con la etiqueta "form", solo ejecute las caracteristicas mientras que el maus este sobre el y cuando este activado*/
 form button:hover:enabled {
     box-shadow: 4px 4px 30px 2px #000000; /* el doy un formato al borde que en este caso es de sombra 10 desplazamiento-x | 10 desplazamiento-y | 30 radio de desenfoque | 15 radio de extensión | color*/
 }
 
+/* defino que solo la etiqueta "button" con propiedad "disabled" (aplica a todo lo que este desabilitado) dentro del bloque con la etiqueta "form", solo ejecute las caracteristicas a todo lo que este desactivado*/
 form button:disabled {
     padding: 10px; /* le indico que ocupe un relleno de 20px para todo los lados */
     margin-top: 10px; /* le doy un margen superior*/
