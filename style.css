@@ -127,8 +127,8 @@ footer .copyright {
     color: #0feb0b; /* defino el color del texto*/
     font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
     margin: 0.45% 0 0 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra*/
-    padding-left: 34%; /* defino un espacio interno a la izquierda*/
-    padding-right: 2%; /* defino un espacio interno a la izquierda*/
+    padding-left: 35%; /* defino un espacio interno a la izquierda*/
+    padding-right: 1.5%; /* defino un espacio interno a la izquierda*/
 }
 
 /* defino que solo la clase "logo" dentro del bloque con la etiqueta "footer" tendra tendra ciertas caracteristicas */
