@@ -5,18 +5,18 @@ body {
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (  max-width:426px){
+@media screen and ( max-width:426px){
     body {
         background: rgb(16, 223, 223); /* defino que color de fondo */
     }
 
     footer .copyright {
         
-        color: #17f022 !important; /* defino el color del texto*/
+        color: #513be4 !important; /* defino el color del texto*/
         font-size: 21.8px!important; /* defino el tamaño del texto e indico que lo fuerse*/
         padding-left: 1.5% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
-        padding-right: 1.4% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
-        margin: 1.5% 0 0 0 !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra e indico que lo fuerse*/
+        padding-right: 1.5% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
+        margin: 1.52% 0 0 0 !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra e indico que lo fuerse*/
     }
 }
 
@@ -26,6 +26,7 @@ body {
     }
     footer .copyright {
         padding-left: 21.5% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
+        margin: 1.52% 0 0 0 !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra e indico que lo fuerse*/
     }
 }
 
