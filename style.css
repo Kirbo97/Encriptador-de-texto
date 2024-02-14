@@ -5,23 +5,25 @@ body {
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (max-width:440px){
+@media screen and (  max-width:451px){
     body {
         background: rgb(16, 223, 223); /* defino que color de fondo */
     }
 
     
     footer .copyright {
-        font-size: 21px!important; /* defino el tamaño del texto e indico que lo fuerse*/
-        padding-left: 0 !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
-        margin: 1.5% 0 0 2% !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra e indico que lo fuerse*/
-    }
-    footer .logo{
-        padding-left: 2% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
+        font-size: 21.8px!important; /* defino el tamaño del texto e indico que lo fuerse*/
+        padding-left: 1.5% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
+        padding-right: 1% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
+        margin: 1.5% 0 0 0 !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra e indico que lo fuerse*/
     }
 }
 
-
+@media screen and (  orientation:landscape){
+    footer .copyright {
+        padding-left: 18% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
+    }
+}
 
 /* defino que la etiqueta "form" tendra tendra ciertas caracteristicas */
 form {
@@ -122,11 +124,10 @@ footer .copyright {
     font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
     margin: 0.45% 0 0 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra*/
     padding-left: 34%; /* defino un espacio interno a la izquierda*/
+    padding-right: 2%; /* defino un espacio interno a la izquierda*/
 }
 
 /* defino que solo la clase "logo" dentro del bloque con la etiqueta "footer" tendra tendra ciertas caracteristicas */
 footer .logo {
     width: 42px; /* ajusto el tamaño que tendra esta clase */
-    padding-left: 2%; /* defino un espacio interno a la izquierda*/
-    
 }
