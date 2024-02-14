@@ -1,13 +1,32 @@
 /* defino que la etiqueta "body" tendra tendra ciertas caracteristicas */
 body {
-    background: darkslategray; /* defino qun color de fondo */
+    background: darkslategray; /* defino que color de fondo */
     font-family: 'Poppins', sans-serif; /* defino un tipo de texto */
 }
+
+/* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
+@media screen and (max-width:320px){
+
+    footer{
+        width: 29em !important;  /* ajusto el tamaño que tendra esta clase e indico que lo fuerse*/
+    }
+    
+    footer .copyright {
+        font-size: 21px!important; /* defino el tamaño del texto e indico que lo fuerse*/
+        padding-left: 0 !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
+        margin: 1.5% 0 0 2% !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra e indico que lo fuerse*/
+    }
+    footer .logo{
+        padding-left: 2% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
+    }
+}
+
+
 
 /* defino que la etiqueta "form" tendra tendra ciertas caracteristicas */
 form {
     width: 400px; /* ajusto el tamaño que tendra esta clase */
-    margin: 20vh auto 12.5vh auto; /* le indico que ocupe un margen externo de 20 de arriba, auto derecha, 0 abajo y auto para izquierda */
+    margin: 20vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     padding: 20px; /* le indico que ocupe un relleno de 20px para todo los lados */
     background-color: whitesmoke; /* defino un color de fondo */
     border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
@@ -16,8 +35,15 @@ form {
 
 /* defino que solo la etiqueta "h1" dentro del bloque con la etiqueta "form" tendra tendra ciertas caracteristicas */
 form h1 {
-    color: #0f2027;
-    text-align: center;
+    color: #0f2027; /* defino el color del texto */
+    text-align: center; /* defino que el texto este centrado*/
+    display: block; /* le indico que el elemento sea como un bloque al igual que la etiqueta "div" respetando el ancho, el alto y los márgenes verticales de cada elemento*/
+    font-size: 2em; /* defino el tamaño del texto*/
+    margin-block-start: 0.67em; /* defino la posisiones del texto*/
+    margin-block-end: 0.67em; /* defino la posisiones del texto*/
+    margin-inline-start: 0px; /* defino la posisiones del texto*/
+    margin-inline-end: 0px; /* defino la posisiones del texto*/
+    font-weight: bold; /* defino el formato del en negrita*/
 }
 
 /* defino que solo la etiqueta "button" dentro del bloque con la etiqueta "form" tendra tendra ciertas caracteristicas */
@@ -81,25 +107,26 @@ form button:disabled {
 
 /* defino que solo la etiqueta "footer" tendra tendra ciertas caracteristicas */
 footer {
-    width: 31em;  /* ajusto el tamaño que tendra esta clase */
-    position: relative; /* el elemento conserva su puesto en el flujo del documento pero se desplaza según los valores de top, right, bottom y left o por el pading*/
-    top: 40px; /* el elemento se desplazara abajo */
-    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño proporcionado por bloque en el que se encuentran*/
+    position: fixed; /* defino que tendra una posision fija */
+    bottom: 0; /* defino que se posisionara al final de la pagina */
+    background: rgb(4, 4, 4); /* defino que color de fondo */
+    width: 100%;  /* ajusto el tamaño que tendra esta clase */
+    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
     flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
-    margin: 1em auto 1em 1%; /* le indico que ocupe un margen externo de arriba, auto derecha, 0 abajo y auto para izquierda *//* le indico que todo la etiqueta tendra un margen en todo sus lados*/
 }
 
 /* defino que solo la clase "copyright" dentro del bloque con la etiqueta "footer" tendra tendra ciertas caracteristicas */
 footer .copyright {
-    font-size: 24px; /* defino el tamaño del texto*/
-    width: 89%;  /* ajusto el tamaño que tendra esta clase */
-    color: #0a0b0b; /* defino el color del texto*/
+    font-size: 23px; /* defino el tamaño del texto*/
+    color: #f1f5f5; /* defino el color del texto*/
     font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
-    margin: 1% 0 0 0; /* le quito el margen al posedor de esta clase*/
+    margin: 0.45% 0 0 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra*/
+    padding-left: 27%; /* defino un espacio interno a la izquierda*/
 }
 
 /* defino que solo la clase "logo" dentro del bloque con la etiqueta "footer" tendra tendra ciertas caracteristicas */
 footer .logo {
     width: 42px; /* ajusto el tamaño que tendra esta clase */
+    padding-left: 2%; /* defino un espacio interno a la izquierda*/
     
 }
