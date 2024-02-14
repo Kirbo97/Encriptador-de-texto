@@ -5,7 +5,7 @@ body {
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (max-width:320px){
+@media screen and (max-width:360px){
 
     footer{
         width: 29em !important;  /* ajusto el tamaño que tendra esta clase e indico que lo fuerse*/
@@ -121,7 +121,7 @@ footer .copyright {
     color: #f1f5f5; /* defino el color del texto*/
     font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
     margin: 0.45% 0 0 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra*/
-    padding-left: 27%; /* defino un espacio interno a la izquierda*/
+    padding-left: 34%; /* defino un espacio interno a la izquierda*/
 }
 
 /* defino que solo la clase "logo" dentro del bloque con la etiqueta "footer" tendra tendra ciertas caracteristicas */
