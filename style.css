@@ -11,6 +11,8 @@ body {
     }
 
     footer .copyright {
+        
+    color: #fafdfa; /* defino el color del texto*/
         font-size: 21.8px!important; /* defino el tamaño del texto e indico que lo fuerse*/
         padding-left: 1.5% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
         padding-right: 1.2% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
@@ -122,7 +124,7 @@ footer {
 /* defino que solo la clase "copyright" dentro del bloque con la etiqueta "footer" tendra tendra ciertas caracteristicas */
 footer .copyright {
     font-size: 23px; /* defino el tamaño del texto*/
-    color: #f1f5f5; /* defino el color del texto*/
+    color: #0feb0b; /* defino el color del texto*/
     font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
     margin: 0.45% 0 0 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra*/
     padding-left: 34%; /* defino un espacio interno a la izquierda*/
