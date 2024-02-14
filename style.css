@@ -20,7 +20,7 @@ body {
     }
 }
 
-@media screen and (max-width:721px) and (orientation:landscape){
+@media screen and (max-height:440px) and (orientation:landscape){
     body {
         background: rgb(16, 223, 223); /* defino que color de fondo */
     }
