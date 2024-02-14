@@ -4,9 +4,9 @@ String.prototype.replaceAt = function(index, replacement) {
 	return this.substring(0, index) + replacement + this.substring(index + 1);
 }
 
-let bol=0;
+let bol=0; //Creo una variable para usarlo como bandera
 
-//creo una funcion que limitara los caracteres a usar en mi cuadro de texto
+//creo una funcion que limitara los caracteres proibida usar en mi cuadro de texto
 function remplazar(elemento){
   let texto = elemento.value;
   texto = texto.split(/[^a-z, ]+/g); //permito los caracteres de la (a - z) y el espacio en blanco 
@@ -51,17 +51,15 @@ function encriptar(){
 // funcion de decodificar
 function copiar(){
   let parrafo = document.querySelector('.codificar');  //la variable se conectara al elementos espesificos del html el cual es el elemento que tenga o este dentro de la clase codificar
+  let btndes = document.getElementById('desen');
+  let btnenc = document.getElementById('enc');
   if (bol==1) { //si ya codifico avilita el boton de decodificar
-    let btndes = document.getElementById('desen');
     btndes.disabled = false;
-    let btnenc = document.getElementById('enc');
     btnenc.disabled = true;
     parrafo.innerHTML= '!Sin decodificar'; 
 
   } else if (bol==2) {  //si ya decodifico avilita el boton de codificar
-    let btnenc = document.getElementById('enc');
     btnenc.disabled = false;
-    let btndes = document.getElementById('desen');
     btndes.disabled = true;
     parrafo.innerHTML= '!Sin codificar'; 
   }

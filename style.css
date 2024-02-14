@@ -86,16 +86,16 @@ footer {
     top: 40px; /* el elemento se desplazara abajo */
     display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño proporcionado por bloque en el que se encuentran*/
     flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
-    margin: 1em; /* le indico que todo la etiqueta tendra un margen en todo sus lados*/
+    margin: 1em auto 1em 1%; /* le indico que ocupe un margen externo de arriba, auto derecha, 0 abajo y auto para izquierda *//* le indico que todo la etiqueta tendra un margen en todo sus lados*/
 }
 
 /* defino que solo la clase "copyright" dentro del bloque con la etiqueta "footer" tendra tendra ciertas caracteristicas */
 footer .copyright {
     font-size: 24px; /* defino el tamaño del texto*/
-    width: 96%;  /* ajusto el tamaño que tendra esta clase */
+    width: 89%;  /* ajusto el tamaño que tendra esta clase */
     color: #0a0b0b; /* defino el color del texto*/
     font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
-    margin: 0; /* le quito el margen al posedor de esta clase*/
+    margin: 1% 0 0 0; /* le quito el margen al posedor de esta clase*/
 }
 
 /* defino que solo la clase "logo" dentro del bloque con la etiqueta "footer" tendra tendra ciertas caracteristicas */
