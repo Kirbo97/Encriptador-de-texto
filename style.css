@@ -5,28 +5,27 @@ body {
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (  max-width:441px){
+@media screen and (  max-width:426px){
     body {
         background: rgb(16, 223, 223); /* defino que color de fondo */
     }
 
     footer .copyright {
         
-        color: #f06317 !important; /* defino el color del texto*/
+        color: #17f022 !important; /* defino el color del texto*/
         font-size: 21.8px!important; /* defino el tamaño del texto e indico que lo fuerse*/
         padding-left: 1.5% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
-        padding-right: 1.2% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
+        padding-right: 1.4% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
         margin: 1.5% 0 0 0 !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra e indico que lo fuerse*/
     }
 }
 
-@media screen and (max-height:440px) and (orientation:landscape){
+@media screen and (max-height:426px) and (orientation:landscape){
     body {
         background: rgb(16, 223, 223); /* defino que color de fondo */
     }
     footer .copyright {
-        color: #e8108b !important; /* defino el color del texto*/
-        padding-left: 21% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
+        padding-left: 21.5% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
     }
 }
 
@@ -125,7 +124,7 @@ footer {
 /* defino que solo la clase "copyright" dentro del bloque con la etiqueta "footer" tendra tendra ciertas caracteristicas */
 footer .copyright {
     font-size: 23px; /* defino el tamaño del texto*/
-    color: #0feb0b; /* defino el color del texto*/
+    color: #f3f5f3; /* defino el color del texto*/
     font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
     margin: 0.45% 0 0 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra*/
     padding-left: 35%; /* defino un espacio interno a la izquierda*/
