@@ -5,15 +5,11 @@ body {
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (max-width:370px){
+@media screen and (max-width:400px){
     body {
         background: rgb(16, 223, 223); /* defino que color de fondo */
-        font-family: 'Poppins', sans-serif; /* defino un tipo de texto */
     }
 
-    footer{
-        width: 29em !important;  /* ajusto el tamaño que tendra esta clase e indico que lo fuerse*/
-    }
     
     footer .copyright {
         font-size: 21px!important; /* defino el tamaño del texto e indico que lo fuerse*/
