@@ -25,8 +25,8 @@ body {
         background: rgb(16, 223, 223); /* defino que color de fondo */
     }
     footer .copyright {
-        color: #5640c5 !important; /* defino el color del texto*/
-        padding-left: 20% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
+        color: #e8108b !important; /* defino el color del texto*/
+        padding-left: 21% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
     }
 }
 
