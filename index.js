@@ -39,7 +39,7 @@ function encriptar(){
   let parrafo = document.querySelector('.codificar');  //la variable se conectara al elementos espesificos del html el cual es el elemento que tenga o este dentro de la clase codificar
   parrafo.innerHTML= fe; //la variable conectada a la clase remplasara su texto visual por el contenido de la variable "fe"
   parrafo.value=fe; //guardo el contenido para ser usado mas adelante
-  bol=1;
+  bol=1; //cambio mi bandera a 1
 
   if(fe != "!Sin codificar"){   //si el programa codifico la frase, el boton se avilita
     let btncop = document.getElementById('cop');
@@ -81,7 +81,7 @@ function desencriptar(){
   let parrafo = document.querySelector('.codificar');  //la variable se conectara al elementos espesificos del html el cual es el elemento que tenga o este dentro de la clase codificar
   parrafo.innerHTML= fd; //la variable conectada a la clase remplasara su texto visual por el contenido de la variable "fd"
   parrafo.value=fd; //guardo el contenido para ser usado mas adelante
-  bol=2;
+  bol=2; //cambio mi bandera a 2
   
     if(fd != "!Sin decodificar"){   //si el programa codifico la frase, el boton se avilita
       let btncop = document.getElementById('cop');
