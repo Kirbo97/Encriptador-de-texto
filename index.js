@@ -8,9 +8,12 @@ let bol=0; //Creo una variable para usarlo como bandera
 
 //creo una funcion que limitara los caracteres proibida usar en mi cuadro de texto
 function remplazar(elemento){
-  let texto = elemento.value;
-  texto = texto.split(/[^a-z, ]+/g); //permito los caracteres de la (a - z) y el espacio en blanco 
-  texto = texto.join("");
+  let texto = elemento.value.split(/[^a-z, ]+/g); //creo una variable que actuara como un arreglo a partir de la frase pero solo permitira los caracteres (a - z) minusculas y el espacio en blanco estar dentro de la celdas y los demas los ignorara.
+  //En caso de que la fase empieza con un caracter proibido, ese caracter se guardara en la primera celda como espacio vacio. 
+  texto = texto.join(""); //le indico que unifique todos los contenidos de las celdas como una cadena de caracteres pero las celdas que estan en blanco las ignore
+  if(elemento.value!=texto.split(/[^a-z, ]+/g)){
+    alert("El programa no permite vocales con tildes, mayusculas y sibolos.");
+  }
   elemento.value = texto;
 }
 
@@ -22,7 +25,7 @@ function encriptar(){
   } else {    
     let ini=0;
     var cant = frase.value.length; // calculo la cantidad de carracteres que tiene
-    let enc= frase.value.split(''); // creo un arreglo a partir de la frase para cambiar las casillas requeridas
+    let enc= frase.value.split(''); // creo un arreglo a partir de la frase (cada caracter tendra su propia celda) para cambiar las casillas requeridas
     // compruebo cada casilla para cambiar las vocales
     while (ini < cant) {
 
@@ -32,7 +35,7 @@ function encriptar(){
         if(enc [ini] == "o"){ enc [ini] = 'ober'; }
         if(enc [ini] == "u"){ enc [ini] = 'ufat'; }
 
-        if(ini == 0){ fe=enc [ini]; } else { fe=fe+enc [ini]; } // unifico todo como una nueva frase
+        fe=enc.join(""); //le indico que unifique todos los contenidos de las celdas como una cadena de caracteres pero las celdas que estan en blanco las ignore
         ini = ini + 1;
     }
   }
