@@ -1,4 +1,4 @@
-let bol=0; //Creo una variable para usarlo como bandera
+let bol=0; //Creo una variable para usarlo como una bandera
 
 //creo una funcion que limitara los caracteres proibida usar en mi cuadro de texto
 function remplazar(elemento){
