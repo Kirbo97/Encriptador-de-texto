@@ -93,8 +93,8 @@ form button:disabled {
     border: 2px solid #0c0c0c; /* le indico que los bordes tengan un grosor de 2px, el tipo de borde y el color */
 	border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
 	font-size: 15px; /* defino el tamaño del texto*/
-	padding: 10px 0; /* le indico que ocupe un margen externo vertical (arriba y abajo) y horizontal (derecha y izquierda) */
-	width: 100%; /* ajusto el tamaño que tendra esta clase */
+	padding: 10px 6px; /* le indico que ocupe un margen externo vertical (arriba y abajo) y horizontal (derecha y izquierda) */
+	width: 96%; /* ajusto el tamaño que tendra esta clase */
 }
 
 /* defino que solo la clase tendra tendra ciertas caracteristicas */

@@ -1,9 +1,3 @@
-// añado la funcion para poder remplasar texto
-String.prototype.replaceAt = function(index, replacement) {
-	if (index >= this.length) { return this.valueOf(); }
-	return this.substring(0, index) + replacement + this.substring(index + 1);
-}
-
 let bol=0; //Creo una variable para usarlo como bandera
 
 //creo una funcion que limitara los caracteres proibida usar en mi cuadro de texto
