@@ -14,11 +14,7 @@ body {
     }
     
     .posision-pri {
-        margin: 0 0 0 2.5em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
-    }
-
-    .posision-sec {
-        margin: 0 0 0 8em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+        margin: 0 0 0 2.1em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda) e indico que lo fuerse*/
     }
 }
 
@@ -30,11 +26,7 @@ body {
     }
     
     .posision-pri {
-        margin: 0 0 0 10em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
-    }
-
-    .posision-sec {
-        margin: 0 0 0 8em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+        margin: 0 0 0 12em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda) e indico que lo fuerse*/
     }
 }
 
