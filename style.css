@@ -1,6 +1,6 @@
 /* defino que la etiqueta "body" tendra tendra ciertas caracteristicas */
 body {
-    background: darkslategray; /* defino que color de fondo */
+    background: url(IMG/fondo.jpg); /* defino una imagen como fondo */
     font-family: 'Poppins', sans-serif; /* defino un tipo de texto */
 }
 
@@ -110,21 +110,35 @@ footer {
     bottom: 0; /* defino que se posisionara al final de la pagina */
     background: rgb(4, 4, 4); /* defino que color de fondo */
     width: 100%;  /* ajusto el tamaño que tendra esta clase */
-    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
-    flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
+
 }
 
-/* defino que solo la clase "copyright" dentro del bloque con la etiqueta "footer" tendra tendra ciertas caracteristicas */
-footer .copyright {
+p {
     font-size: 23px; /* defino el tamaño del texto*/
     color: #f3f5f3; /* defino el color del texto*/
     font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
-    margin: 0.45% 0 0 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra*/
+    margin: 0.75% 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra*/
+}
+
+
+/* defino que solo la clase "copyright" dentro del bloque con la etiqueta "footer" tendra tendra ciertas caracteristicas */
+#infor {
+    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
+    flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
     padding-left: 35%; /* defino un espacio interno a la izquierda*/
-    padding-right: 1.5%; /* defino un espacio interno a la izquierda*/
+    margin: 0.8% 0 0 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
 }
 
 /* defino que solo la clase "logo" dentro del bloque con la etiqueta "footer" tendra tendra ciertas caracteristicas */
-footer .logo {
+#infor .logo {
     width: 42px; /* ajusto el tamaño que tendra esta clase */
+    padding-left: 1.8%; /* defino un espacio interno a la izquierda*/
+}
+
+
+
+/* defino que solo la clase "logo" dentro del bloque con la etiqueta "footer" tendra tendra ciertas caracteristicas */
+#infor .linkedin {
+    width: 40px; /* ajusto el tamaño que tendra esta clase */
+    padding-left: 30%; /* defino un espacio interno a la izquierda*/
 }
