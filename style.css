@@ -118,7 +118,7 @@ footer {
 section{
     display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
     flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
-    margin: 0.55% 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+    margin: 0.55% 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra */
 }
 
 /* defino que solo la clase "copyright" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
@@ -136,21 +136,15 @@ section .logo {
     width: 42px; /* ajusto el tamaño que tendra esta clase */
 }
 
+.posision-pri {
+    margin: 0 0 0 35em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+}
 
-/* defino que solo la clase "stream" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
-section .stream {
-    width: 40px; /* ajusto el tamaño que tendra esta clase */
-    padding-left: 36%; /* defino un espacio interno a la izquierda*/
-    padding-right: 10%; /* defino un espacio interno a la derecha*/
+.posision-sec {
+    margin: 0 0 0 9.5em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
 }
 
 /* defino que solo la clase "linkedin" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
-section .linkedin {
+section .enlace {
     width: 40px; /* ajusto el tamaño que tendra esta clase */
-}
-
-/* defino que solo la clase "video" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
-section .video {
-    width: 40px; /* ajusto el tamaño que tendra esta clase */
-    padding-left: 10%; /* defino un espacio interno a la izquierda*/
 }
