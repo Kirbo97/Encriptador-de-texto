@@ -12,6 +12,14 @@ body {
         padding-right: 2.2% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
         margin: 1.52% 0 0 0 !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra e indico que lo fuerse*/
     }
+    
+    .posision-pri {
+        margin: 0 0 0 20em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+    }
+
+    .posision-sec {
+        margin: 0 0 0 9.5em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+    }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
@@ -136,15 +144,17 @@ section .logo {
     width: 42px; /* ajusto el tamaño que tendra esta clase */
 }
 
+/* defino que solo la clase "posision-pri" tendra tendra ciertas caracteristicas */
 .posision-pri {
     margin: 0 0 0 35em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
 }
 
+/* defino que solo la clase "posision-sec" tendra tendra ciertas caracteristicas */
 .posision-sec {
     margin: 0 0 0 9.5em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
 }
 
-/* defino que solo la clase "linkedin" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
+/* defino que solo la clase "enlace" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
 section .enlace {
     width: 40px; /* ajusto el tamaño que tendra esta clase */
 }
