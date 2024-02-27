@@ -6,7 +6,7 @@ body {
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and ( max-width:426px){
-    footer .copyright {
+    section .copyright {
         font-size: 21.8px!important; /* defino el tamaño del texto e indico que lo fuerse*/
         padding-left: 1.55% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
         padding-right: 2.2% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
@@ -16,7 +16,7 @@ body {
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
 @media screen and (max-height:426px) and (orientation:landscape){
-    footer .copyright {
+    section .copyright {
         padding-left: 21.55% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
         margin: 0.8% 0 0 0 !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra e indico que lo fuerse*/
     }
@@ -110,35 +110,47 @@ footer {
     bottom: 0; /* defino que se posisionara al final de la pagina */
     background: rgb(4, 4, 4); /* defino que color de fondo */
     width: 100%;  /* ajusto el tamaño que tendra esta clase */
-
+    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
+    flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
 }
 
-p {
+/* defino que solo la etiqueta "section" tendra tendra ciertas caracteristicas */
+section{
+    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
+    flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
+    margin: 0.55% 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+}
+
+/* defino que solo la clase "copyright" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
+section .copyright {
     font-size: 23px; /* defino el tamaño del texto*/
     color: #f3f5f3; /* defino el color del texto*/
     font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
-    margin: 0.75% 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra*/
-}
-
-
-/* defino que solo la clase "copyright" dentro del bloque con la etiqueta "footer" tendra tendra ciertas caracteristicas */
-#infor {
-    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
-    flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
+    margin: 0.45% 0 0 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra*/
     padding-left: 35%; /* defino un espacio interno a la izquierda*/
-    margin: 0.8% 0 0 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+    padding-right: 1.5%; /* defino un espacio interno a la derecha*/
 }
 
-/* defino que solo la clase "logo" dentro del bloque con la etiqueta "footer" tendra tendra ciertas caracteristicas */
-#infor .logo {
+/* defino que solo la clase "logo" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
+section .logo {
     width: 42px; /* ajusto el tamaño que tendra esta clase */
-    padding-left: 1.8%; /* defino un espacio interno a la izquierda*/
 }
 
 
-
-/* defino que solo la clase "logo" dentro del bloque con la etiqueta "footer" tendra tendra ciertas caracteristicas */
-#infor .linkedin {
+/* defino que solo la clase "stream" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
+section .stream {
     width: 40px; /* ajusto el tamaño que tendra esta clase */
-    padding-left: 30%; /* defino un espacio interno a la izquierda*/
+    padding-left: 36%; /* defino un espacio interno a la izquierda*/
+    padding-right: 10%; /* defino un espacio interno a la derecha*/
+}
+
+/* defino que solo la clase "linkedin" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
+section .linkedin {
+    width: 40px; /* ajusto el tamaño que tendra esta clase */
+}
+
+/* defino que solo la clase "video" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
+section .video {
+    width: 40px; /* ajusto el tamaño que tendra esta clase */
+    padding-left: 10%; /* defino un espacio interno a la izquierda*/
 }
