@@ -8,17 +8,17 @@ body {
 @media screen and ( max-width:426px){
     section .copyright {
         font-size: 21.8px!important; /* defino el tamaño del texto e indico que lo fuerse*/
-        padding-left: 1.55% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
-        padding-right: 2.2% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
+        padding-left: 1.6% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
+        padding-right: 2.2% !important; /* defino un espacio interno a la derechaa e indico que lo fuerse*/
         margin: 1.52% 0 0 0 !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra e indico que lo fuerse*/
     }
     
     .posision-pri {
-        margin: 0 0 0 1.9em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda) e indico que lo fuerse*/
+        margin: 0 0 0 1.7em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda) e indico que lo fuerse*/
     }
 
     .posision-sec {
-        margin: 0 0 0 9em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda) e indico que lo fuerse*/
+        margin: 0 0 0 8.8em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda) e indico que lo fuerse*/
     }
 }
 
@@ -31,10 +31,6 @@ body {
     
     .posision-pri {
         margin: 0 0 0 11em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda) e indico que lo fuerse*/
-    }
-
-    .posision-sec {
-        margin: 0 0 0 9em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda) e indico que lo fuerse*/
     }
 }
 
