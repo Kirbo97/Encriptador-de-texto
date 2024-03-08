@@ -44,6 +44,11 @@ form {
     font-size: 12px; /* defino el tamaño del texto*/
 }
 
+/* defino que solo la clase "alura" tendra tendra ciertas caracteristicas */
+.alura {
+    width: 15px; /* ajusto el tamaño que tendra esta clase */
+}
+
 /* defino que solo la etiqueta "h1" dentro del bloque con la etiqueta "form" tendra tendra ciertas caracteristicas */
 form h1 {
     color: #0f2027; /* defino el color del texto */
@@ -150,12 +155,12 @@ section .logo {
 
 /* defino que solo la clase "posision-pri" tendra tendra ciertas caracteristicas */
 .posision-pri {
-    margin: 0 0 0 35em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+    margin: 0 0 0 34.5em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
 }
 
 /* defino que solo la clase "posision-sec" tendra tendra ciertas caracteristicas */
 .posision-sec {
-    margin: 0 0 0 9.5em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+    margin: 0 0 0 5.8em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
 }
 
 /* defino que solo la clase "enlace" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
