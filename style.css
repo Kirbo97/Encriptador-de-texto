@@ -6,6 +6,10 @@ body {
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and ( max-width:426px){
+    form {
+        margin: 20vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+    }
+
     section .copyright {
         font-size: 21.8px!important; /* defino el tamaño del texto e indico que lo fuerse*/
         padding-left: 1.7% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
@@ -34,14 +38,14 @@ body {
     }
     
     .posision-sec {
-    margin: 0 0 0 5em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+        margin: 0 0 0 4em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
 }
 }
 
 /* defino que la etiqueta "form" tendra tendra ciertas caracteristicas */
 form {
     width: 400px; /* ajusto el tamaño que tendra esta clase */
-    margin: 10em auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+    margin: 20vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     padding: 20px; /* le indico que ocupe un relleno de 20px para todo los lados */
     background-color: whitesmoke; /* defino un color de fondo */
     border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
