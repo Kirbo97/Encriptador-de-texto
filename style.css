@@ -5,13 +5,13 @@ body {
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (max-width:428px){
+@media screen and (max-height:700px){
     form {
         margin: 20.2vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     }
 
     section .copyright {
-        font-size: 20px !important; /* defino el tamaño del texto e indico que lo fuerse*/
+        font-size: 2px !important; /* defino el tamaño del texto e indico que lo fuerse*/
         margin: 1.8% 5% 0 auto !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
     }
 
