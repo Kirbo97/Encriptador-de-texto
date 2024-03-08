@@ -5,7 +5,7 @@ function remplazar(elemento){
   let texto = elemento.value.split(/[^a-z, ]+/g); //creo una variable que actuara como un arreglo a partir de la frase pero solo permitira los caracteres (a - z) minusculas y el espacio en blanco estar dentro de la celdas y los demas los ignorara.
   //En caso de que la fase empieza con un caracter proibido, ese caracter se guardara en la primera celda como espacio vacio. 
   texto = texto.join(""); //le indico que unifique todos los contenidos de las celdas como una cadena de caracteres pero las celdas que estan en blanco las ignore
-  if(elemento.value!=texto.split(/[^a-z, ]+/g)){
+  if(elemento.value!=texto){
     alert("El programa no permite vocales con tildes, mayusculas y sibolos.");
   }
   elemento.value = texto;
