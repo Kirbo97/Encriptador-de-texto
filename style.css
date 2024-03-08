@@ -7,7 +7,7 @@ body {
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and (max-width:426px){
     form {
-        margin: 25vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+        margin: 27vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     }
 
     section .copyright {
@@ -49,7 +49,7 @@ body {
 /* defino que la etiqueta "form" tendra tendra ciertas caracteristicas */
 form {
     width: 400px; /* ajusto el tamaño que tendra esta clase */
-    margin: 15vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+    margin: 15.1vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     padding: 13px; /* le indico que ocupe un relleno de 20px para todo los lados */
     background-color: whitesmoke; /* defino un color de fondo */
     border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
@@ -67,7 +67,7 @@ form h1 {
     text-align: center; /* defino que el texto este centrado*/
     display: block; /* le indico que el elemento sea como un bloque al igual que la etiqueta "div" respetando el ancho, el alto y los márgenes verticales de cada elemento*/
     font-size: 2em; /* defino el tamaño del texto*/
-    margin-block-start: 0.57em; /* defino la posisiones del texto*/
+    margin-block-start: 0.55em; /* defino la posisiones del texto*/
     margin-block-end: 0.67em; /* defino la posisiones del texto*/
     margin-inline-start: 0px; /* defino la posisiones del texto*/
     margin-inline-end: 0px; /* defino la posisiones del texto*/
