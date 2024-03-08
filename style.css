@@ -14,20 +14,16 @@ body {
         font-size: 20px !important; /* defino el tamaño del texto e indico que lo fuerse*/
         margin: 1.8% 3% 0 auto !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
     }
-
-    .posision-sec {
-    margin: 0 0 0 4.8em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
-    }
-
-    .posision-ter {
-    margin: 0 auto 0 4.8em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
-    }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
 @media screen and (max-height:426px) and (orientation:landscape){
     form {
         margin: 17.9vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+    }
+    
+    section .copyright {
+        margin: 0.7% 3% 0 auto !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
     }
 }
 
@@ -130,7 +126,7 @@ footer {
 section{
     display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
     flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
-    margin: 0.53% 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra */
+    margin: 0.60% 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra */
 }
 
 /* defino que solo la clase "copyright" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
@@ -159,12 +155,12 @@ section .logo {
 
 /* defino que solo la clase "posision-sec" tendra tendra ciertas caracteristicas */
 .posision-sec {
-    margin: 0 0 0 5.8em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+    margin: 0 0 0 4.8em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
 }
 
 /* defino que solo la clase "posision-ter" tendra tendra ciertas caracteristicas */
 .posision-ter {
-    margin: 0 auto 0 5.8em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+    margin: 0 auto 0 4.8em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
 }
 
 /* defino que solo la clase "enlace" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
