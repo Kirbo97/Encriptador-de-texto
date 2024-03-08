@@ -5,7 +5,7 @@ body {
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (max-width:426px) {
+@media screen and (max-width:426px) and (max-height:801px) {
     form {
         margin: 20.2vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     }
@@ -159,12 +159,12 @@ section .logo {
 
 /* defino que solo la clase "posision-sec" tendra tendra ciertas caracteristicas */
 .posision-sec {
-    margin: 0 0 0 4.8em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+    margin: 0 0 0 4.7em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
 }
 
 /* defino que solo la clase "posision-ter" tendra tendra ciertas caracteristicas */
 .posision-ter {
-    margin: 0 auto 0 4.8em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+    margin: 0 auto 0 4.7em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
 }
 
 /* defino que solo la clase "enlace" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
