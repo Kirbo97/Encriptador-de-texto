@@ -7,12 +7,12 @@ body {
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and (max-width:426px){
     form {
-        margin: 27vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+        margin: 29vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     }
 
     section .copyright {
         font-size: 21.8px!important; /* defino el tamaño del texto e indico que lo fuerse*/
-        padding-left: 1.7% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
+        padding-left: 1.9% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
         padding-right: 2.3% !important; /* defino un espacio interno a la derechaa e indico que lo fuerse*/
         margin: 1.52% 0 0 0 !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra e indico que lo fuerse*/
     }
@@ -22,7 +22,7 @@ body {
     }
 
     .posision-sec {
-        margin: 0 0 0 4.7em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda) e indico que lo fuerse*/
+        margin: 0 0 0 4.5em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda) e indico que lo fuerse*/
     }
 }
 
@@ -33,6 +33,7 @@ body {
     }
 
     section .copyright {
+        font-size: 21.8px!important; /* defino el tamaño del texto e indico que lo fuerse*/
         padding-left: 21.55% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
         margin: 0.8% 0 0 0 !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra e indico que lo fuerse*/
     }
