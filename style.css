@@ -12,15 +12,7 @@ body {
 
     section .copyright {
         font-size: 19px !important; /* defino el tamaño del texto e indico que lo fuerse*/
-        margin: 1.8% 5% 0 0 !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
-    }
-
-    .posision-sec {
-    margin: 0 0 0 4.8em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
-    }
-
-    .posision-ter {
-    margin: 0 auto 0 4.8em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+        margin: 1.8% 5% 0 3.5% !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
     }
 }
 
@@ -124,8 +116,6 @@ form button:disabled {
 
 /* defino que solo la etiqueta "footer" tendra tendra ciertas caracteristicas */
 footer {
-    
-    position: fixed; /* defino que tendra una posision fija */
     background: rgb(4, 4, 4); /* defino que color de fondo */
     width: 100%;  /* ajusto el tamaño que tendra esta clase */
     display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
