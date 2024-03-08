@@ -41,7 +41,7 @@ body {
 /* defino que la etiqueta "form" tendra tendra ciertas caracteristicas */
 form {
     width: 400px; /* ajusto el tamaño que tendra esta clase */
-    margin: 20vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+    margin: 10em auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     padding: 20px; /* le indico que ocupe un relleno de 20px para todo los lados */
     background-color: whitesmoke; /* defino un color de fondo */
     border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
