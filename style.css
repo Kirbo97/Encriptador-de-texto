@@ -5,7 +5,7 @@ body {
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (max-height:705px) and (max-width:426px) {
+@media screen and (max-width:426px) {
     form {
         margin: 20.2vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     }
@@ -126,7 +126,6 @@ form button:disabled {
 footer {
     
     position: fixed; /* defino que tendra una posision fija */
-    bottom: 0; /* defino que se posisionara al final de la pagina */
     background: rgb(4, 4, 4); /* defino que color de fondo */
     width: 100%;  /* ajusto el tamaño que tendra esta clase */
     display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
