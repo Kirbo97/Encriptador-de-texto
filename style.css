@@ -11,9 +11,19 @@ body {
     }
 
     section .copyright {
-        font-size: 20px!important; /* defino el tamaño del texto e indico que lo fuerse*/
-        
-        margin: 0.45% 1% 0 auto; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+        font-size: 20px !important; /* defino el tamaño del texto e indico que lo fuerse*/
+    }
+
+    .posision-pri {
+    margin: 0 0 0 auto; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+    }
+
+    .posision-sec {
+    margin: 0 0 0 5em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+    }
+
+    .posision-ter {
+    margin: 0 auto 0 5em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
     }
 }
 
@@ -146,9 +156,19 @@ section .logo {
     width: 42px; /* ajusto el tamaño que tendra esta clase */
 }
 
-/* defino que solo la clase "posision" tendra tendra ciertas caracteristicas */
-.posision{
-    margin: 0 auto; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba y abajo │ derecha y izquierda)*/
+/* defino que solo la clase "posision-pri" tendra tendra ciertas caracteristicas */
+.posision-pri {
+    margin: 0 0 0 auto; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+}
+
+/* defino que solo la clase "posision-pri" tendra tendra ciertas caracteristicas */
+.posision-sec {
+    margin: 0 0 0 5.8em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+}
+
+/* defino que solo la clase "posision-sec" tendra tendra ciertas caracteristicas */
+.posision-ter {
+    margin: 0 auto 0 5.8em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
 }
 
 /* defino que solo la clase "enlace" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
