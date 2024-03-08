@@ -5,9 +5,9 @@ body {
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and ( max-width:426px){
+@media screen and (max-width:426px){
     form {
-        margin: 23vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+        margin: 25vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     }
 
     section .copyright {
@@ -22,7 +22,7 @@ body {
     }
 
     .posision-sec {
-        margin: 0 0 0 4.8em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda) e indico que lo fuerse*/
+        margin: 0 0 0 4.7em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda) e indico que lo fuerse*/
     }
 }
 
@@ -42,7 +42,7 @@ body {
     }
     
     .posision-sec {
-        margin: 0 0 0 5.1em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+        margin: 0 0 0 5em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
     }
 }
 
