@@ -22,7 +22,7 @@ body {
     }
 
     .posision-sec {
-        margin: 0 0 0 4.9em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda) e indico que lo fuerse*/
+        margin: 0 0 0 4.8em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda) e indico que lo fuerse*/
     }
 }
 
@@ -42,7 +42,7 @@ body {
     }
     
     .posision-sec {
-        margin: 0 0 0 6em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+        margin: 0 0 0 5.5em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
     }
 }
 
@@ -50,7 +50,7 @@ body {
 form {
     width: 400px; /* ajusto el tamaño que tendra esta clase */
     margin: 20vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
-    padding: 20px; /* le indico que ocupe un relleno de 20px para todo los lados */
+    padding: 13px; /* le indico que ocupe un relleno de 20px para todo los lados */
     background-color: whitesmoke; /* defino un color de fondo */
     border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
     font-size: 12px; /* defino el tamaño del texto*/
@@ -67,7 +67,7 @@ form h1 {
     text-align: center; /* defino que el texto este centrado*/
     display: block; /* le indico que el elemento sea como un bloque al igual que la etiqueta "div" respetando el ancho, el alto y los márgenes verticales de cada elemento*/
     font-size: 2em; /* defino el tamaño del texto*/
-    margin-block-start: 0.67em; /* defino la posisiones del texto*/
+    margin-block-start: 0.57em; /* defino la posisiones del texto*/
     margin-block-end: 0.67em; /* defino la posisiones del texto*/
     margin-inline-start: 0px; /* defino la posisiones del texto*/
     margin-inline-end: 0px; /* defino la posisiones del texto*/
@@ -147,7 +147,7 @@ footer {
 section{
     display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
     flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
-    margin: 0.55% 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra */
+    margin: 0.52% 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra */
 }
 
 /* defino que solo la clase "copyright" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
