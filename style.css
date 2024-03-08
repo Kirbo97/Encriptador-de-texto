@@ -7,42 +7,20 @@ body {
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and (max-width:426px){
     form {
-        margin: 30vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+        margin: 20vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     }
 
     section .copyright {
-        font-size: 21.5px!important; /* defino el tamaño del texto e indico que lo fuerse*/
-        padding-left: 1.9% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
-        padding-right: 2.3% !important; /* defino un espacio interno a la derechaa e indico que lo fuerse*/
-        margin: 1.52% 0 0 0 !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra e indico que lo fuerse*/
-    }
-    
-    .posision-pri {
-        margin: 0 0 0 1.6em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda) e indico que lo fuerse*/
-    }
-
-    .posision-sec {
-        margin: 0 0 0 4.5em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda) e indico que lo fuerse*/
+        font-size: 20px!important; /* defino el tamaño del texto e indico que lo fuerse*/
+        
+        margin: 0.45% 1% 0 auto; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
     }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
 @media screen and (max-height:426px) and (orientation:landscape){
     form {
-        margin: 18vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
-    }
-
-    section .copyright {
-        padding-left: 21.57% !important; /* defino un espacio interno a la izquierda e indico que lo fuerse*/
-        margin: 0.8% 0 0 0 !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra e indico que lo fuerse*/
-    }
-    
-    .posision-pri {
-        margin: 0 0 0 11.7em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda) e indico que lo fuerse*/
-    }
-    
-    .posision-sec {
-        margin: 0 0 0 5em !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+        margin: 17.9vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     }
 }
 
@@ -148,14 +126,19 @@ section{
     margin: 0.53% 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra */
 }
 
+
 /* defino que solo la clase "copyright" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
 section .copyright {
     font-size: 22.5px; /* defino el tamaño del texto*/
     color: #f3f5f3; /* defino el color del texto*/
     font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
-    margin: 0.45% 0 0 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra*/
-    padding-left: 35%; /* defino un espacio interno a la izquierda*/
-    padding-right: 1.5%; /* defino un espacio interno a la derecha*/
+    margin: 0.45% 1% 0 auto; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+}
+
+/* defino que solo la clase "logo" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
+section .logo-mio {
+    width: 42px; /* ajusto el tamaño que tendra esta clase */   
+    margin: 0 auto 0 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
 }
 
 /* defino que solo la clase "logo" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
@@ -163,14 +146,9 @@ section .logo {
     width: 42px; /* ajusto el tamaño que tendra esta clase */
 }
 
-/* defino que solo la clase "posision-pri" tendra tendra ciertas caracteristicas */
-.posision-pri {
-    margin: 0 0 0 34.5em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
-}
-
-/* defino que solo la clase "posision-sec" tendra tendra ciertas caracteristicas */
-.posision-sec {
-    margin: 0 0 0 5.8em; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+/* defino que solo la clase "posision" tendra tendra ciertas caracteristicas */
+.posision{
+    margin: 0 auto; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba y abajo │ derecha y izquierda)*/
 }
 
 /* defino que solo la clase "enlace" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
