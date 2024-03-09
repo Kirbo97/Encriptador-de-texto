@@ -5,9 +5,9 @@ body {
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (max-width:426px) and (max-height:802px) {
+@media screen and (max-width:426px) and (max-height:810px) {
     form {
-        margin: 20.15vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+        margin: 20.18vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     }
 
     footer {    
