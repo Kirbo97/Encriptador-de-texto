@@ -5,13 +5,13 @@ body {
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (max-width:426px) and (max-height:810px) {
+@media screen and (max-width:426px) and (max-height:811px) {
     form {
         margin: 20.15vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     }
 
     footer {    
-        
+        position: fixed !important; /* defino que tendra una posision fija */
     }
 
     section .copyright {
