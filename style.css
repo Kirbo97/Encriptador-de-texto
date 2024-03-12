@@ -20,9 +20,13 @@
         position: fixed !important; /* defino que tendra una posision fija */
     }
 
+    section{
+        margin: 1.5% 0 !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra */
+    }
+
     section .copyright {
         font-size: 19px !important; /* defino el tamaño del texto e indico que lo fuerse*/
-        margin: 1.8% auto 0 auto !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+        margin: 0 auto !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
     }
 }
 
