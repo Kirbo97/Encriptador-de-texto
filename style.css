@@ -1,7 +1,7 @@
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and (max-width:426px) and (max-height:811px) {
     form {
-        margin: 4.4vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+        margin: 4.45vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     }
 
     .movil{
@@ -22,19 +22,15 @@
 
     section .copyright {
         font-size: 19px !important; /* defino el tamaño del texto e indico que lo fuerse*/
-        margin: 1.8% 5% 0 auto !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+        margin: 1.8% auto 0 auto !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
     }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
 @media screen and (max-height:426px) and (orientation:landscape){
     form {
-        margin: 17.5vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+        margin: 17.55vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
         width: 338px !important; /* ajusto el tamaño que tendra esta clase */
-    }
-    
-    section .copyright {
-        margin: 0.7% 3% 0 auto !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
     }
 }
 
@@ -184,7 +180,7 @@ footer {
 section{
     display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño interno proporcionado por bloque en el que se encuentran*/
     flex-direction: row; /* le indico que los elemento del bloque flexible se organinse en fila*/
-    margin: 0.60% 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra */
+    margin: 0.67% 0; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra */
 }
 
 /* defino que solo la clase "copyright" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
@@ -192,7 +188,7 @@ section .copyright {
     font-size: 22.5px; /* defino el tamaño del texto*/
     color: #f3f5f3; /* defino el color del texto*/
     font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
-    margin: 0.45% 1% 0 auto; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
+    margin: 0.45% auto 0 auto; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
 }
 
 /* defino que solo la clase "logo-mio" dentro del bloque con la etiqueta "section" tendra tendra ciertas caracteristicas */
