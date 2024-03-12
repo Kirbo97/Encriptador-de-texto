@@ -13,7 +13,7 @@ function remplazar(elemento){
 
 // creo funcion de codificar
 function encriptar(){
-  let fe = '!Sin codificar';
+  let fe = '!Ingrese un texto para comenzar.';
   if(frase.value == ""){ // valido si el contenido del imput esta vacio o no a traves de la id
     alert("Porfavor ingrese una palabra para codificar"); 
   } else {    
@@ -38,9 +38,16 @@ function encriptar(){
   parrafo.value=fe; //guardo el contenido para ser usado mas adelante
   bol=1; //cambio mi bandera a 1
 
-  if(fe != "!Sin codificar"){   //si el programa codifico la frase, el boton se avilita
-    let btncop = document.getElementById('cop');
+  if(fe != "!Ingrese un texto para comenzar."){   //si el programa codifico la frase, el boton se avilita
+    let btncop = document.getElementById('cop');  //el boton copiar se avilita
     btncop.disabled = false;
+
+    
+    let encotrar = document.getElementById('busqueda'); //La imagen cambia
+    encotrar.setAttribute("src", "IMG/lleno.gif");
+
+    let titulo = document.getElementById('codigo'); //El titulo cambia
+    titulo.innerHTML="El texto codificado es";
   }
 
 }
@@ -50,25 +57,28 @@ function copiar(){
   let parrafo = document.querySelector('.codificar');  //la variable se conectara al elementos espesificos del html el cual es el elemento que tenga o este dentro de la clase codificar
   let btndes = document.getElementById('desen');
   let btnenc = document.getElementById('enc');
+  let encotrar = document.getElementById('busqueda');
+  let titulo = document.getElementById('codigo');
   if (bol==1) { //si ya codifico avilita el boton de decodificar
     btndes.disabled = false;
     btnenc.disabled = true;
-    parrafo.innerHTML= '!Sin decodificar'; 
 
   } else if (bol==2) {  //si ya decodifico avilita el boton de codificar
     btnenc.disabled = false;
-    btndes.disabled = true;
-    parrafo.innerHTML= '!Sin codificar'; 
+    btndes.disabled = true; 
   }
     let btncop = document.getElementById('cop');
     btncop.disabled = true;
     frase.value= parrafo.value; //el cuadro de texto remplasara su contenido con lo que tenga el label
+    encotrar.setAttribute("src", "IMG/vacio.png");
+    titulo.innerHTML="Ningun texto fue encontrado";
+    parrafo.innerHTML= '!Ingrese un texto para comenzar.'; 
     alert("La palabra se copio con éxito"); 
 }
 
 // funcion de decodificar
 function desencriptar(){
-  let fd = '!Sin decodificar'; //creo la variable de texto vacio para contener la frase modificado
+  let fd = '!Ingrese un texto para comenzar.'; //creo la variable de texto vacio para contener la frase modificado
   if(frase.value == ""){  // valido si el contenido del imput esta vacio o no a traves de la id
     alert("Porfavor ingrese una palabra codificada"); 
   } else {
@@ -80,7 +90,7 @@ function desencriptar(){
   parrafo.value=fd; //guardo el contenido para ser usado mas adelante
   bol=2; //cambio mi bandera a 2
   
-    if(fd != "!Sin decodificar"){   //si el programa codifico la frase, el boton se avilita
+    if(fd != "!Ingrese un texto para comenzar."){   //si el programa codifico la frase, el boton se avilita
       let btncop = document.getElementById('cop');
       btncop.disabled = false;
     }
