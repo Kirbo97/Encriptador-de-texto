@@ -41,7 +41,6 @@ function encriptar(){
   if(fe != "!Ingrese un texto para comenzar."){   //si el programa codifico la frase, el boton se avilita
     let btncop = document.getElementById('cop');  //el boton copiar se avilita
     btncop.disabled = false;
-
     
     let encotrar = document.getElementById('busqueda'); //La imagen cambia
     encotrar.setAttribute("src", "IMG/lleno.gif");
@@ -93,5 +92,12 @@ function desencriptar(){
     if(fd != "!Ingrese un texto para comenzar."){   //si el programa codifico la frase, el boton se avilita
       let btncop = document.getElementById('cop');
       btncop.disabled = false;
+
+      let encotrar = document.getElementById('busqueda'); //La imagen cambia
+      encotrar.setAttribute("src", "IMG/lleno.gif");
+
+      let titulo = document.getElementById('codigo'); //El titulo cambia
+      titulo.innerHTML="El texto codificado es";
+
     }
 }
