@@ -90,7 +90,7 @@ function desencriptar(){
   bol=2; //cambio mi bandera a 2
   
     if(fd != "!Ingrese un texto para comenzar."){   //si el programa codifico la frase, el boton se avilita
-      let btncop = document.getElementById('cop');
+      let btncop = document.getElementById('cop'); //el boton copiar se avilita
       btncop.disabled = false;
 
       let encotrar = document.getElementById('busqueda'); //La imagen cambia
