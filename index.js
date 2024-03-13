@@ -31,9 +31,7 @@ function encriptar(){
         ini = ini + 1;
     }
   }
-  let parrafo = document.querySelector('.codificar');  //la variable se conectara al elementos espesificos del html el cual es el elemento que tenga o este dentro de la clase codificar
-  parrafo.innerHTML= fe; //la variable conectada a la clase remplasara su texto visual por el contenido de la variable "fe"
-  parrafo.value=fe; //guardo el contenido para ser usado mas adelante
+  respuesta.value = fe; //el cuadro de texto remplasara su contenido con el contenido de la variable
 
   if(fe != "!Ingrese un texto para comenzar."){   //si el programa codifico la frase, el boton se avilita
     let btncop = document.getElementById('cop');  //el boton copiar se avilita
@@ -58,7 +56,10 @@ function copiar(){
   encotrar.setAttribute("src", "IMG/vacio.png"); //La imagen cambia
   titulo.innerHTML="Ningun texto fue encontrado"; //El titulo cambia
   navigator.clipboard.writeText(parrafo.value); //El mensaje es copiado al portapapeles
-  parrafo.innerHTML= '!Ingrese un texto para comenzar.'; //El mensaje cambia
+  navigator.clipboard.readText().then((clipText) => (document.querySelector(".cliptext").innerText = clipText),);
+
+  respuesta.value = ""; //el cuadro de texto remplasara su contenido para que quede vacio
+
   alert("La palabra se copio con éxito"); 
   btncop.disabled = true; //desabilito el boton
 }

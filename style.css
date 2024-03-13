@@ -53,8 +53,8 @@ body {
 /* defino que la etiqueta "form" tendra tendra ciertas caracteristicas */
 form {
     width: 400px; /* ajusto el tamaño que tendra esta clase */
-    margin: 13.13vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
-    padding: 13px; /* le indico que ocupe un relleno de 20px para todo los lados */
+    margin: 13.04vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+    padding: 13px 13px 0 13px; /* le indico que ocupe un relleno de 13px para arriba, derecha, abajo y para izquierda */
     background-color: whitesmoke; /* defino un color de fondo */
     border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
     font-size: 12px; /* defino el tamaño del texto*/
@@ -63,8 +63,8 @@ form {
 /* defino que solo la etiqueta "button" dentro del bloque con la etiqueta "form" tendra tendra ciertas caracteristicas */
 form button:enabled {
     padding: 10px; /* le indico que ocupe un relleno de 20px para todo los lados */
-    margin-top: 10px; /* le doy un margen superior*/
-    margin-bottom: 4%; /* le doy un margen inferior*/
+    margin-top: 5px; /* le doy un margen superior*/
+    margin-bottom: 5%; /* le doy un margen inferior*/
     width: 100%; /* ajusto el tamaño que tendra esta clase */
     font-size: 20px; /* defino el tamaño del texto*/
     font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
@@ -84,8 +84,8 @@ form button:hover:enabled {
 /* defino que solo la etiqueta "button" con propiedad "disabled" (aplica a todo lo que este desabilitado) dentro del bloque con la etiqueta "form", solo ejecute las caracteristicas a todo lo que este desactivado*/
 form button:disabled {
     padding: 10px; /* le indico que ocupe un relleno de 20px para todo los lados */
-    margin-top: 10px; /* le doy un margen superior*/
-    margin-bottom: 4%; /* le doy un margen inferior*/
+    margin-top: 5px; /* le doy un margen superior*/
+    margin-bottom: 5%; /* le doy un margen inferior*/
     width: 100%; /* ajusto el tamaño que tendra esta clase */
     font-size: 20px; /* defino el tamaño del texto*/
     font-weight: bold;  /* ajusto el formato del texto para que tenga negrita*/
@@ -126,7 +126,7 @@ form h1, #codigo {
 
 /* defino que solo etiqueta "label" dentro del bloque con la clase "inicio" tendra tendra ciertas caracteristicas */
 .inicio label{
-    padding: 5px 0 20px 0; /* le indico que ocupe un margen externo (arriba, derecha, abajo y izquierda) */
+    padding: 5px 0 16px 0; /* le indico que ocupe un margen externo (arriba, derecha, abajo y izquierda) */
 }
 
 /* defino que solo etiqueta "input" dentro del bloque con la clase "inicio" tendra tendra ciertas caracteristicas */
@@ -147,13 +147,13 @@ form h1, #codigo {
 .mostrar{
     display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño proporcionado por bloque en el que se encuentran*/
     flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
-    justify-content: center; /* le indico que el texto del bloque flexible se centren*/
-    align-items: center; /* le indico que los elemento del bloque flexible se centren*/
+    
 }
 
 /* defino que solo la clase "busqueda" tendra tendra ciertas caracteristicas */
 #busqueda {
     width: 230px; /* ajusto el tamaño que tendra esta clase */
+    margin: 0 11.9vh; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
 }
 
 /* defino que solo la id "codigo" tendra tendra ciertas caracteristicas */
@@ -161,11 +161,14 @@ form h1, #codigo {
     font-size: 25px; /* defino el tamaño del texto*/
 }
 
-/* defino que solo la clase "codificar" tendra tendra ciertas caracteristicas */
-.codificar{
-    padding: 12px 0; /* le indico que ocupe un margen externo vertical (arriba y abajo) y horizontal (derecha y izquierda) */
-    font-size: 22px;  /* defino el tamaño del texto*/
-    color: rgb(90, 86, 86); /* defino el tamaño del texto*/
+/* defino que solo etiqueta "input" dentro del bloque con la clase "inicio" tendra tendra ciertas caracteristicas */
+.codificar input {
+    border: 2px solid #0c0c0c; /* le indico que los bordes tengan un grosor de 2px, el tipo de borde y el color */
+	border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
+	font-size: 15px; /* defino el tamaño del texto*/
+	padding: 15px 5px; /* le indico que ocupe un margen externo vertical (arriba y abajo) y horizontal (derecha y izquierda) */
+    margin: 0 0 10px 0; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+	width: 96%; /* ajusto el tamaño que tendra esta clase */
 }
 
 /* ************** */
