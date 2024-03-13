@@ -1,5 +1,3 @@
-let bol=0; //Creo una variable para usarlo como una bandera
-
 //creo una funcion que limitara los caracteres proibida usar en mi cuadro de texto
 function remplazar(elemento){
   let texto = elemento.value.split(/[^a-z, ]+/g); //creo una variable que actuara como un arreglo a partir de la frase pero solo permitira los caracteres (a - z) minusculas y el espacio en blanco estar dentro de la celdas y los demas los ignorara.
@@ -36,7 +34,6 @@ function encriptar(){
   let parrafo = document.querySelector('.codificar');  //la variable se conectara al elementos espesificos del html el cual es el elemento que tenga o este dentro de la clase codificar
   parrafo.innerHTML= fe; //la variable conectada a la clase remplasara su texto visual por el contenido de la variable "fe"
   parrafo.value=fe; //guardo el contenido para ser usado mas adelante
-  bol=1; //cambio mi bandera a 1
 
   if(fe != "!Ingrese un texto para comenzar."){   //si el programa codifico la frase, el boton se avilita
     let btncop = document.getElementById('cop');  //el boton copiar se avilita
@@ -54,32 +51,23 @@ function encriptar(){
 // funcion de decodificar
 function copiar(){
   let parrafo = document.querySelector('.codificar');  //la variable se conectara al elementos espesificos del html el cual es el elemento que tenga o este dentro de la clase codificar
-  let btndes = document.getElementById('desen');
-  let btnenc = document.getElementById('enc');
   let encotrar = document.getElementById('busqueda');
   let titulo = document.getElementById('codigo');
-  if (bol==1) { //si ya codifico avilita el boton de decodificar
-    btndes.disabled = false;
-    btnenc.disabled = true;
+  let btncop = document.getElementById('cop');
 
-  } else if (bol==2) {  //si ya decodifico avilita el boton de codificar
-    btnenc.disabled = false;
-    btndes.disabled = true; 
-  }
-    let btncop = document.getElementById('cop');
-    btncop.disabled = true;
-    frase.value= parrafo.value; //el cuadro de texto remplasara su contenido con lo que tenga el label
-    encotrar.setAttribute("src", "IMG/vacio.png");
-    titulo.innerHTML="Ningun texto fue encontrado";
-    parrafo.innerHTML= '!Ingrese un texto para comenzar.'; 
-    alert("La palabra se copio con éxito"); 
+  encotrar.setAttribute("src", "IMG/vacio.png"); //La imagen cambia
+  titulo.innerHTML="Ningun texto fue encontrado"; //El titulo cambia
+  navigator.clipboard.writeText(parrafo.value); //El mensaje es copiado al portapapeles
+  parrafo.innerHTML= '!Ingrese un texto para comenzar.'; //El mensaje cambia
+  alert("La palabra se copio con éxito"); 
+  btncop.disabled = true; //desabilito el boton
 }
 
 // funcion de decodificar
 function desencriptar(){
   let fd = '!Ingrese un texto para comenzar.'; //creo la variable de texto vacio para contener la frase modificado
   if(frase.value == ""){  // valido si el contenido del imput esta vacio o no a traves de la id
-    alert("Porfavor ingrese una palabra codificada"); 
+    alert("Porfavor ingrese una palabra para decodificar"); 
   } else {
     fd=frase.value.replaceAll("ai","a").replaceAll("enter","e").replaceAll("imes","i").replaceAll("ober","o").replaceAll("ufat","u"); // mi variable tendra la frase y realisara un remplaso total de todas las coincidencia que tenga
   }
@@ -87,8 +75,7 @@ function desencriptar(){
   let parrafo = document.querySelector('.codificar');  //la variable se conectara al elementos espesificos del html el cual es el elemento que tenga o este dentro de la clase codificar
   parrafo.innerHTML= fd; //la variable conectada a la clase remplasara su texto visual por el contenido de la variable "fd"
   parrafo.value=fd; //guardo el contenido para ser usado mas adelante
-  bol=2; //cambio mi bandera a 2
-  
+
     if(fd != "!Ingrese un texto para comenzar."){   //si el programa codifico la frase, el boton se avilita
       let btncop = document.getElementById('cop'); //el boton copiar se avilita
       btncop.disabled = false;
@@ -97,7 +84,7 @@ function desencriptar(){
       encotrar.setAttribute("src", "IMG/lleno.gif");
 
       let titulo = document.getElementById('codigo'); //El titulo cambia
-      titulo.innerHTML="El texto codificado es";
+      titulo.innerHTML="El texto decodificado es";
 
     }
 }
