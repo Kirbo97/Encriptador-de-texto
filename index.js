@@ -59,7 +59,7 @@ function copiar(){
   titulo.innerHTML="Ningun texto fue encontrado"; //El titulo cambia
   navigator.clipboard.writeText(parrafo.value); //El mensaje es copiado al portapapeles
   parrafo.innerHTML= '!Ingrese un texto para comenzar.'; //El mensaje cambia
-//  alert("La palabra se copio con éxito"); 
+  alert("La palabra se copio con éxito"); 
   btncop.disabled = true; //desabilito el boton
 }
 
