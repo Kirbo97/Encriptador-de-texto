@@ -40,7 +40,7 @@ function encriptar(){
     let encotrar = document.getElementById('busqueda'); //La imagen cambia
     encotrar.setAttribute("src", "IMG/lleno.gif");
 
-    let titulo = document.getElementById('codigo'); //El titulo cambia
+    let titulo = document.getElementById('mensaje'); //El titulo cambia
     titulo.innerHTML="El texto codificado es";
   }
 
@@ -48,18 +48,15 @@ function encriptar(){
 
 // funcion de decodificar
 function copiar(){
-  let parrafo = document.querySelector('.codificar');  //la variable se conectara al elementos espesificos del html el cual es el elemento que tenga o este dentro de la clase codificar
   let encotrar = document.getElementById('busqueda');
-  let titulo = document.getElementById('codigo');
+  let titulo = document.getElementById('mensaje');
   let btncop = document.getElementById('cop');
 
   encotrar.setAttribute("src", "IMG/vacio.png"); //La imagen cambia
   titulo.innerHTML="Ningun texto fue encontrado"; //El titulo cambia
-  navigator.clipboard.writeText(parrafo.value); //El mensaje es copiado al portapapeles
-  navigator.clipboard.readText().then((clipText) => (document.querySelector(".cliptext").innerText = clipText),);
-
-  respuesta.value = ""; //el cuadro de texto remplasara su contenido para que quede vacio
-
+  navigator.clipboard.writeText(respuesta.value); //El mensaje es copiado al portapapeles
+  navigator.clipboard.readText().then((clipText) => (document.querySelector(".cliptext").innerText = clipText),); //Solicito que admitar la funcion de copiar al portapapeles el navegador
+  respuesta.value = ""; //el cuadro de texto remplasara su contenido con el contenido de la variable
   alert("La palabra se copio con éxito"); 
   btncop.disabled = true; //desabilito el boton
 }
@@ -73,9 +70,7 @@ function desencriptar(){
     fd=frase.value.replaceAll("ai","a").replaceAll("enter","e").replaceAll("imes","i").replaceAll("ober","o").replaceAll("ufat","u"); // mi variable tendra la frase y realisara un remplaso total de todas las coincidencia que tenga
   }
 
-  let parrafo = document.querySelector('.codificar');  //la variable se conectara al elementos espesificos del html el cual es el elemento que tenga o este dentro de la clase codificar
-  parrafo.innerHTML= fd; //la variable conectada a la clase remplasara su texto visual por el contenido de la variable "fd"
-  parrafo.value=fd; //guardo el contenido para ser usado mas adelante
+  respuesta.value = fd; //el cuadro de texto remplasara su contenido con el contenido de la variable
 
     if(fd != "!Ingrese un texto para comenzar."){   //si el programa codifico la frase, el boton se avilita
       let btncop = document.getElementById('cop'); //el boton copiar se avilita
@@ -84,7 +79,7 @@ function desencriptar(){
       let encotrar = document.getElementById('busqueda'); //La imagen cambia
       encotrar.setAttribute("src", "IMG/lleno.gif");
 
-      let titulo = document.getElementById('codigo'); //El titulo cambia
+      let titulo = document.getElementById('mensaje'); //El titulo cambia
       titulo.innerHTML="El texto decodificado es";
 
     }

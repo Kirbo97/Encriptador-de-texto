@@ -1,7 +1,7 @@
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and (max-width:426px) and (max-height:811px) {
     form {
-        margin: 4.45vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+        margin: 4.55vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     }
 
     .movil{
@@ -33,7 +33,7 @@
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
 @media screen and (max-height:426px) and (orientation:landscape){
     form {
-        margin: 17.55vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+        margin: 17.53vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
         width: 338px !important; /* ajusto el tamaño que tendra esta clase */
     }
 }
@@ -104,8 +104,8 @@ form button:disabled {
     width: 15px; /* ajusto el tamaño que tendra esta clase */
 }
 
-/* defino que solo la etiqueta "h1" dentro del bloque con la etiqueta "form" y la id "codigo" dentro de la etiqueta "h1" tendra tendra ciertas caracteristicas */
-form h1, #codigo {
+/* defino que solo la etiqueta "h1" dentro del bloque con la etiqueta "form" y la id "mensaje" dentro de la etiqueta "h1" tendra tendra ciertas caracteristicas */
+form h1, #mensaje {
     color: #0f2027; /* defino el color del texto */
     text-align: center; /* defino que el texto este centrado*/
     display: block; /* le indico que el elemento sea como un bloque al igual que la etiqueta "div" respetando el ancho, el alto y los márgenes verticales de cada elemento*/
@@ -153,17 +153,17 @@ form h1, #codigo {
 /* defino que solo la clase "busqueda" tendra tendra ciertas caracteristicas */
 #busqueda {
     width: 230px; /* ajusto el tamaño que tendra esta clase */
-    margin: 0 11.9vh; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+    margin: 0 11.9vh; /* le indico que ocupe un margen externo arriba,abajo y para derecha, izquierda */
 }
 
-/* defino que solo la id "codigo" tendra tendra ciertas caracteristicas */
-#codigo {
+/* defino que solo la id "mensaje" tendra tendra ciertas caracteristicas */
+#mensaje {
     font-size: 25px; /* defino el tamaño del texto*/
 }
 
-/* defino que solo etiqueta "input" dentro del bloque con la clase "inicio" tendra tendra ciertas caracteristicas */
+/* defino que solo etiqueta "input" dentro del bloque con la clase "codificar" tendra tendra ciertas caracteristicas */
 .codificar input {
-    border: 2px solid #0c0c0c; /* le indico que los bordes tengan un grosor de 2px, el tipo de borde y el color */
+    border: 2px solid #9b9999; /* le indico que los bordes tengan un grosor de 2px, el tipo de borde y el color */
 	border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
 	font-size: 15px; /* defino el tamaño del texto*/
 	padding: 15px 5px; /* le indico que ocupe un margen externo vertical (arriba y abajo) y horizontal (derecha y izquierda) */
