@@ -54,12 +54,10 @@ function copiar(){
 
   encotrar.setAttribute("src", "IMG/vacio.png"); //La imagen cambia
   titulo.innerHTML="Ningun texto fue encontrado"; //El titulo cambia
-  
   navigator.clipboard.readText().then((clipText) => (document.querySelector(".cliptext").innerText = clipText),); //Solicito que admitar la funcion de copiar al portapapeles el navegador del movil
   navigator.clipboard.writeText(respuesta.value); //El mensaje es copiado al portapapeles
   respuesta.value = ""; //el cuadro de texto remplasara su contenido con el contenido de la variable
-  
-
+  alert("La palabra se copio con éxito"); 
   btncop.disabled = true; //desabilito el boton
 }
 
