@@ -1,7 +1,7 @@
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and (max-width:426px) and (max-height:811px) {
     form {
-        margin: 5.38vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+        margin: 4.37vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     }
 
     .movil{
@@ -63,7 +63,6 @@ form {
 /* defino que solo la etiqueta "button" dentro del bloque con la etiqueta "form" tendra tendra ciertas caracteristicas */
 form button:enabled {
     padding: 10px; /* le indico que ocupe un relleno de 20px para todo los lados */
-    margin-top: 5px; /* le doy un margen superior*/
     margin-bottom: 5%; /* le doy un margen inferior*/
     width: 100%; /* ajusto el tamaño que tendra esta clase */
     font-size: 20px; /* defino el tamaño del texto*/
@@ -126,7 +125,7 @@ form h1, #mensaje {
 
 /* defino que solo etiqueta "label" dentro del bloque con la clase "inicio" tendra tendra ciertas caracteristicas */
 .inicio label{
-    padding: 5px 0 16px 0; /* le indico que ocupe un margen externo (arriba, derecha, abajo y izquierda) */
+    padding: 5px 0 14px 0; /* le indico que ocupe un margen externo (arriba, derecha, abajo y izquierda) */
 }
 
 /* defino que solo etiqueta "input" dentro del bloque con la clase "inicio" tendra tendra ciertas caracteristicas */
@@ -135,8 +134,16 @@ form h1, #mensaje {
 	border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
 	font-size: 15px; /* defino el tamaño del texto*/
 	padding: 15px 5px; /* le indico que ocupe un margen externo vertical (arriba y abajo) y horizontal (derecha y izquierda) */
-    margin: 10px 0 20px 0; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+    margin: 5px 0 8px 0; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
 	width: 96%; /* ajusto el tamaño que tendra esta clase */
+}
+
+#enc{
+	margin-top: 22px; /* le doy un margen superior*/
+}
+
+#desen{
+	margin-top: 9px; /* le doy un margen superior*/
 }
 
 /* **************** */
