@@ -6,6 +6,7 @@
 
     .movil{
         flex-direction: column !important; /* le indico que los elemento del bloque flexible se organinse en columna*/
+        margin: 5.6px auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     }
 
     .mostrar{
@@ -138,10 +139,12 @@ form h1, #mensaje {
 	width: 96%; /* ajusto el tamaño que tendra esta clase */
 }
 
+/* defino que solo la id "enc" tendra tendra ciertas caracteristicas */
 #enc{
 	margin-top: 22px; /* le doy un margen superior*/
 }
 
+/* defino que solo la id "desenc" tendra tendra ciertas caracteristicas */
 #desen{
 	margin-top: 9px; /* le doy un margen superior*/
 }
