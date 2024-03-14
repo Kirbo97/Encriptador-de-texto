@@ -6,7 +6,7 @@
 
     .movil{
         flex-direction: column !important; /* le indico que los elemento del bloque flexible se organinse en columna*/
-        margin: 5.6px auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+        margin: 1px auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     }
 
     .mostrar{
