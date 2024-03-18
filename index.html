@@ -23,7 +23,8 @@
                 <div class="inicio">
                     <!-- Usar el mismo nombre del for e id ayuda a que esten entrelasados -->
                     <label for="frase">Ingrese una palabra</label> <!-- muestra texto en pantalla de un formulario-->
-                    <input id="frase" name="frase" type="text" onkeyup="remplazar(this)" placeholder="Ingrese una palabra"></input>   <!-- crea un cuadro para ingresar texto y que sea obligatorio de llenar dentro de un formulario, ademas tendra una funcion que se estara cumpliendo consecutivamente-->
+                    <textarea id="frase" name="" type="text" onkeyup="remplazar(this)" placeholder="Ingrese una palabra"></textarea>
+                    <!-- crea un cuadro para ingresar texto y que sea obligatorio de llenar dentro de un formulario, ademas tendra una funcion que se estara cumpliendo consecutivamente-->
                 </div> 
 
                 <img src="IMG/infor.png"  alt="infor"></img><!-- Conecta el archivo jpg para ser usado en la pagina-->
@@ -37,7 +38,7 @@
                
                 <h1 id="mensaje">Ningun texto fue encontrado</h1> <!-- Para titulo que se visualisa -->
                                 
-                <div class="codificar"> <input id="respuesta"  type="text" placeholder="!Ingrese un texto para comenzar." disabled="disabled"></input></div> <!-- muestra texto en pantalla de un formulario y sera el encargado de mostrar el resultado de la codificacion y decodificacion -->
+                <div class="codificar"><textarea id="respuesta"  type="text" placeholder="!Ingrese un texto para comenzar." disabled="disabled"></textarea></div> <!-- muestra texto en pantalla de un formulario y sera el encargado de mostrar el resultado de la codificacion y decodificacion -->
                 
                 <button type="button" onclick="copiar()" disabled="disabled" id="cop">Copiar</button><!-- crea un boton que al ser presionado va a ejecutar una funcion del js-->
             </form>

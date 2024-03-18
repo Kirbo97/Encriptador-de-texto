@@ -54,7 +54,7 @@ body {
 /* defino que la etiqueta "form" tendra tendra ciertas caracteristicas */
 form {
     width: 400px; /* ajusto el tamaño que tendra esta clase */
-    margin: 13.04vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+    margin: 10.48vh auto; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     padding: 13px 13px 0 13px; /* le indico que ocupe un relleno de 13px para arriba, derecha, abajo y para izquierda */
     background-color: whitesmoke; /* defino un color de fondo */
     border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
@@ -121,11 +121,14 @@ form h1, #mensaje {
 }
 
 /* defino que solo etiqueta "input" dentro del bloque con la clase "inicio" tendra tendra ciertas caracteristicas */
-.inicio input {
+.inicio textarea {
+    height: 10vh; /* defino el alto del cuadro de texto */
+    width: 400px; /* defino el ancho del cuadro de texto */
+    resize: none; /* Desactiva el redimensionamiento del cuadro de texto */
     border: 2px solid #0c0c0c; /* le indico que los bordes tengan un grosor de 2px, el tipo de borde y el color */
 	border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
 	font-size: 15px; /* defino el tamaño del texto*/
-	padding: 15px 5px; /* le indico que ocupe un margen externo vertical (arriba y abajo) y horizontal (derecha y izquierda) */
+	padding: 6px 5px; /* le indico que ocupe un margen externo vertical (arriba y abajo) y horizontal (derecha y izquierda) */
     margin: 5px 0 8px 0; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
 	width: 96%; /* ajusto el tamaño que tendra esta clase */
 }
@@ -163,12 +166,15 @@ form h1, #mensaje {
 }
 
 /* defino que solo etiqueta "input" dentro del bloque con la clase "codificar" tendra tendra ciertas caracteristicas */
-.codificar input {
+.codificar textarea {
+    height: 9.5vh; /* defino el alto del cuadro de texto */
+    width: 400px; /* defino el ancho del cuadro de texto */
+    resize: none; /* Desactiva el redimensionamiento del cuadro de texto */
     border: 2px solid #9b9999; /* le indico que los bordes tengan un grosor de 2px, el tipo de borde y el color */
 	border-radius: 4px; /* le indico que las esquinas de los bordes sean curveados */
 	font-size: 15px; /* defino el tamaño del texto*/
-	padding: 15px 5px; /* le indico que ocupe un margen externo vertical (arriba y abajo) y horizontal (derecha y izquierda) */
-    margin: 0 0 10px 0; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+	padding: 6px 5px; /* le indico que ocupe un margen externo vertical (arriba y abajo) y horizontal (derecha y izquierda) */
+    margin: 5px 0 8px 0; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
 	width: 96%; /* ajusto el tamaño que tendra esta clase */
 }
 
