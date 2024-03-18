@@ -31,7 +31,7 @@
     }
 
     .codificar textarea , .inicio textarea {
-        height: 4.5vh !important; /* defino el alto del cuadro de texto */
+        height: 5.5vh !important; /* defino el alto del cuadro de texto */
     }
 }
 
