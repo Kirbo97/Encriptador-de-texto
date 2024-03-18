@@ -29,12 +29,16 @@
         font-size: 19px !important; /* defino el tamaño del texto e indico que lo fuerse*/
         margin: 0 auto !important; /* le pongo el margen al posedor de esta clase para alinear la altura de la letra (arriba, derecha, abajo y izquierda)*/
     }
+
+    .codificar textarea , .inicio textarea {
+        height: 8.5vh !important; /* defino el alto del cuadro de texto */
+    }
 }
 
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
 @media screen and (max-height:426px) and (orientation:landscape){
     form {
-        margin: 17vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+        margin: 16.5vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
         width: 338px !important; /* ajusto el tamaño que tendra esta clase */
     }
 }
