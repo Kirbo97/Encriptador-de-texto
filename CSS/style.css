@@ -1,7 +1,7 @@
 /* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
 @media screen and (max-width:426px) and (max-height:811px) {
     form {
-        margin: 3.9vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
+        margin: 3.7vh auto !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
     }
 
     .movil{
