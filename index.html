@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head> <!-- es el cerebro de la pagina web -->
+        <meta charset="UTF-8">   <!-- Para usar la escritura latina -->
+        <title>Encriptador y Desencriptador</title> <!-- Da nombre a la pagina -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> <!-- Para que se adapte a la pantalla en la que se encuentra -->
+        <link rel="shortcut icon" href="./IMG/Kirbo.ico"> <!-- Da icono a la pestaña de la pagina -->
+        <link rel="stylesheet" href="./CSS/reset.css"> <!-- Conecta el archivo CSS para ser usado en la pagina --><!-- Este CSS es para quitar los diseños que estan por defectos-->
+        <link rel="stylesheet" href="./CSS/style.css"> <!-- Conecta el archivo CSS para ser usado en la pagina --><!-- Este CSS es para darle forma y diseño a nuestra pagina-->
+        <script type="text/javascript" src="./JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene las funciones de encriptar y desencriptar de la pagina-->
+    </head>
+    
+    <body>
+        <div id="content">
+            <main>
+                <div class="movil">
+                    <form> <!-- Para crear formulario en mi pagina -->
+                        <div> <img src="IMG/logo.png"  alt="logo" class="alura"></img> </div><!-- Conecta el archivo jpg para ser usado en la pagina-->
+                        
+                        <h1>Encriptador y Desencriptador de palabras</h1> <!-- Para titulo que se visualisa -->
+                        
+                        <div class="inicio">
+                            <!-- Usar el mismo nombre del for e id ayuda a que esten entrelasados -->
+                            <label for="frase">Ingrese una palabra</label> <!-- muestra texto en pantalla de un formulario-->
+                            <textarea id="frase" name="" type="text" onkeyup="remplazar(this)" placeholder="Ingrese una palabra"></textarea>
+                            <!-- crea un cuadro para ingresar texto y que sea obligatorio de llenar dentro de un formulario, ademas tendra una funcion que se estara cumpliendo consecutivamente-->
+                        </div> 
+        
+                        <img src="IMG/infor.png"  alt="infor"></img><!-- Conecta el archivo jpg para ser usado en la pagina-->
+        
+                        <button type="button" onclick="encriptar()" id="enc">Encriptar</button> <!-- crea un boton que al ser presionado va a ejecutar una funcion del js-->
+                        <button type="button" onclick="desencriptar()" id="desen">Desencriptar</button>
+                    </form>
+        
+                    <form class="mostrar" id="cuadro_dos"> <!-- Para crear formulario en mi pagina -->
+                        <div style="text-align: center;"> <img src="IMG/vacio.png"  id="busqueda"></img>  </div><!-- Conecta el archivo jpg para ser usado en la pagina-->
+                       
+                        <h1 id="mensaje">Ningun texto fue encontrado</h1> <!-- Para titulo que se visualisa -->
+                                        
+                        <div class="codificar"><textarea id="respuesta"  type="text" placeholder="!Ingrese un texto para comenzar." disabled="disabled"></textarea></div> <!-- muestra texto en pantalla de un formulario y sera el encargado de mostrar el resultado de la codificacion y decodificacion -->
+                        
+                        <button type="button" onclick="copiar()" disabled="disabled" id="cop">Copiar</button><!-- crea un boton que al ser presionado va a ejecutar una funcion del js-->
+                    </form>
+                </div>
+
+            </main>
+    
+            <footer>
+                <section class="pie" style="margin-bottom: 5px;"> <p class="copyright">© Copyright Fabian Daquilema - 2024</p> </section>
+            
+                <section style="display: flex; margin: 13.2px 0; justify-content: space-evenly;align-content: center;">
+                    <div>
+                        <a href="https://www.twitch.tv/kirbo1997" target="_blank"><img src="IMG/twitch.png" alt="Twitch" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+                    
+                    <div>
+                        <a href="https://www.linkedin.com/in/fabian-daquilema-aguayo-8b4745134" target="_blank"><img src="IMG/linkedin.png" alt="Linkedin" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+                
+                    <div>
+                        <a href="https://kirbo97.github.io/Portafolio/"><img src="IMG/Home.png" alt="Menu" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+    
+                    <div>
+                        <a href="https://www.youtube.com/@kirbo1997" target="_blank"><img src="IMG/youtube.png"  alt="Youtube" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+    
+                    <div>
+                        <a href="https://github.com/Kirbo97?tab=repositories" target="_blank"><img src="IMG/GitHub-v2.png" alt="Github" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
+                    </div>
+                </section>
+            </footer> 
+        </div>    
+    </body>
+</html>
