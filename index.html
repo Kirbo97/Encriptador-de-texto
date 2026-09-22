@@ -7,10 +7,17 @@
         <link rel="shortcut icon" href="./IMG/Kirbo.ico"> <!-- Da icono a la pestaña de la pagina -->
         <link rel="stylesheet" href="./CSS/reset.css"> <!-- Conecta el archivo CSS para ser usado en la pagina --><!-- Este CSS es para quitar los diseños que estan por defectos-->
         <link rel="stylesheet" href="./CSS/style.css"> <!-- Conecta el archivo CSS para ser usado en la pagina --><!-- Este CSS es para darle forma y diseño a nuestra pagina-->
+        <link rel="stylesheet" href="./CSS/Pantalla_carga.css"> <!-- Conecta el archivo CSS para ser usado en la pagina --><!-- Este CSS es para mostrarlo en pantalla haste que la pagina prinsipal este cargado por completo-->
         <script type="text/javascript" src="./JS/funciones.js"></script> <!-- Conecta el archivo js para ser usado en la pagina --><!-- Este sj contiene las funciones de encriptar y desencriptar de la pagina-->
     </head>
     
     <body>
+        <!-- Pantalla de carga -->
+        <div id="loading-screen">
+            <div class="loader"></div>
+            <p>Cargando...</p>
+        </div>
+
         <div id="content">
             <main>
                 <div class="movil">
@@ -46,9 +53,9 @@
             </main>
     
             <footer>
-                <section class="pie"> <p class="copyright">© Copyright Fabian Daquilema - 2024</p> </section>
+                <section class="pie" style="margin-bottom: 5px;"> <p class="copyright">© Copyright Fabian Daquilema - 2024</p> </section>
             
-                <section style="display: flex; margin: 14px 0 0 0; justify-content: space-evenly;align-content: center;">
+                <section style="display: flex; margin: 13.2px 0; justify-content: space-evenly;align-content: center;">
                     <div>
                         <a href="https://www.twitch.tv/el_kirbo1997" target="_blank"><img src="IMG/twitch.png" alt="Twitch" class="enlace"></img></a> <!-- Conecta el archivo jpg para ser usado en la pagina para usarlo como hipervinculo y le doy un nombre a esa imagen-->
                     </div>
@@ -71,5 +78,12 @@
                 </section>
             </footer> 
         </div>    
+
+        <!-- Ocultar la pantalla de carga cuando termine de cargar la página -->
+        <script>
+            window.addEventListener("load", function () {
+                document.getElementById("loading-screen").style.display = "none";
+            });
+        </script>
     </body>
 </html>
