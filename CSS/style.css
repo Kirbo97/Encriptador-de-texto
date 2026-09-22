@@ -89,20 +89,22 @@ form button:disabled {
 /* defino que solo la clase "alura" tendra tendra ciertas caracteristicas */
 .alura {
     width: 15px; /* ajusto el tamaño que tendra esta clase */
-    margin-bottom: 0.67em;
 }
 
 /* defino que solo la etiqueta "h1" dentro del bloque con la etiqueta "form" y la id "mensaje" dentro de la etiqueta "h1" tendra tendra ciertas caracteristicas */
 form h1, #mensaje {
+
     color: #0f2027; /* defino el color del texto */
     text-align: center; /* defino que el texto este centrado*/
     display: block; /* le indico que el elemento sea como un bloque al igual que la etiqueta "div" respetando el ancho, el alto y los márgenes verticales de cada elemento*/
     font-size: 2em; /* defino el tamaño del texto*/
-    margin: 0; /* defino la posisiones del texto*/
+    margin-block-start: 0.55em; /* defino la posisiones del texto*/
+    margin-block-end: 0.67em; /* defino la posisiones del texto*/
+    margin-inline-start: 0px; /* defino la posisiones del texto*/
+    margin-inline-end: 0px; /* defino la posisiones del texto*/
     font-weight: bold; /* defino el formato del en negrita*/
+    line-height: 22px;
 }
-
-form h1{ max-width: 100%; }
 
 /* defino que solo la clase "inicio_form" tendra tendra ciertas caracteristicas */
 .inicio_form {
@@ -119,7 +121,7 @@ form h1{ max-width: 100%; }
 
 /* defino que solo etiqueta "label" dentro del bloque con la clase "inicio" tendra tendra ciertas caracteristicas */
 .inicio label{
-    padding: 10px 0 12px 0; /* le indico que ocupe un margen externo (arriba, derecha, abajo y izquierda) */
+    padding: 5px 0 14px 0; /* le indico que ocupe un margen externo (arriba, derecha, abajo y izquierda) */
 }
 
 /* defino que solo etiqueta "input" dentro del bloque con la clase "inicio" tendra tendra ciertas caracteristicas */
