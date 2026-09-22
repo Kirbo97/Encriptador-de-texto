@@ -163,6 +163,12 @@ form h1, #mensaje {
     font-weight: bold; /* defino el formato del en negrita*/
 }
 
+/* defino que solo la clase "inicio_form" tendra tendra ciertas caracteristicas */
+.inicio_form {
+    display: flex; /* le indico que el elemento sea como un bloque (igual que la etiqueta "div") flexible y estaran en la misma linea (segun como este el html) ademas cada elemento se ajustara al tamaño proporcionado por bloque en el que se encuentran*/
+    flex-direction: column; /* le indico que los elemento del bloque flexible se organinse en columna*/
+}
+
 /* defino que solo la clase "inicio" tendra tendra ciertas caracteristicas */
 .inicio {
     font-size: 20px; /* defino el tamaño del texto*/
