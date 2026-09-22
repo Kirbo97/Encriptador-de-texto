@@ -84,7 +84,7 @@ body {
 /* esta ID evita que el borde golpee debajo de objetos flotantes */
 #content {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    line-height: 1.5em;
+    line-height: 1.47em;
     overflow: hidden;
     z-index: 0;
     flex-grow: 1; /* Permite que el contenido principal crezca para ocupar el espacio restante */
