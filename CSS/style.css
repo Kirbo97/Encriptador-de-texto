@@ -1,64 +1,5 @@
 @import url('Pantalla_carga.css');
-
-/* ********************************* */
-/*  Diseños para Moviles (426 x 790) */
-/* ********************************* */
-
-/*Con la linea para que se adapte a la pantalla en la que se encuentra, el tamaño para el Movil es (max-width:426px), sin es linea el tamaño para Movil es (max-width:980px)*/
-
-/* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono */
-@media screen and (max-width:980px){
-    form {
-        width: 85% !important; /* le indico que ocupe un margen externo arriba, derecha, abajo y para izquierda */
-    }
-
-    .movil{
-        align-items: center !important; /* le indico que los elemento del bloque flexible se organinse en columna*/
-        margin:7vh 0 !important;
-    }
-
-    #cuadro_dos{
-        margin-top: 5em !important; /* le doy un margen superior*/
-    }
-
-    section .enlace {
-        width: 30px !important; /* ajusto el tamaño que tendra esta clase */
-    }
-
-    section .copyright {
-        font-size:  5vw !important; /* defino el tamaño del texto*/
-    }
-
-    #cop{
-        margin-top: 15px !important; /* le doy un margen superior*/
-    }
-}
-
-/* defino que solo altere estos elementos cuando la pantalla del dispositivo sea un telefono y que este en vertical*/
-@media screen and (max-height:600px) and (orientation:landscape){  
-
-    #cuadro_dos{
-        margin-top: 5em !important; /* le doy un margen superior*/
-    }
-
-    #movil{
-        align-items: center !important; /* le indico que los elemento del bloque flexible se organinse en columna*/
-        row-gap: 12vh !important;
-        margin:7vh 0 !important;
-    } 
-
-    .inicio textarea, .codificar textarea {
-        width: 96.6% !important; /* defino el ancho del cuadro de texto */
-    }
-
-    #cop{
-        margin-top: 15px !important; /* le doy un margen superior*/
-    }
-
-    section .copyright {
-        font-size: 21.5px !important; /* defino el tamaño del texto*/
-    }
-}
+@import url('Diseño_movil.css');
 
 /* ******************* */
 /*  Diseños generales  */
@@ -148,6 +89,7 @@ form button:disabled {
 /* defino que solo la clase "alura" tendra tendra ciertas caracteristicas */
 .alura {
     width: 15px; /* ajusto el tamaño que tendra esta clase */
+    margin-bottom: 0.67em;
 }
 
 /* defino que solo la etiqueta "h1" dentro del bloque con la etiqueta "form" y la id "mensaje" dentro de la etiqueta "h1" tendra tendra ciertas caracteristicas */
@@ -156,12 +98,11 @@ form h1, #mensaje {
     text-align: center; /* defino que el texto este centrado*/
     display: block; /* le indico que el elemento sea como un bloque al igual que la etiqueta "div" respetando el ancho, el alto y los márgenes verticales de cada elemento*/
     font-size: 2em; /* defino el tamaño del texto*/
-    margin-block-start: 0.55em; /* defino la posisiones del texto*/
-    margin-block-end: 0.67em; /* defino la posisiones del texto*/
-    margin-inline-start: 0px; /* defino la posisiones del texto*/
-    margin-inline-end: 0px; /* defino la posisiones del texto*/
+    margin: 0; /* defino la posisiones del texto*/
     font-weight: bold; /* defino el formato del en negrita*/
 }
+
+form h1{ max-width: 100%; }
 
 /* defino que solo la clase "inicio_form" tendra tendra ciertas caracteristicas */
 .inicio_form {
@@ -178,7 +119,7 @@ form h1, #mensaje {
 
 /* defino que solo etiqueta "label" dentro del bloque con la clase "inicio" tendra tendra ciertas caracteristicas */
 .inicio label{
-    padding: 5px 0 14px 0; /* le indico que ocupe un margen externo (arriba, derecha, abajo y izquierda) */
+    padding: 10px 0 12px 0; /* le indico que ocupe un margen externo (arriba, derecha, abajo y izquierda) */
 }
 
 /* defino que solo etiqueta "input" dentro del bloque con la clase "inicio" tendra tendra ciertas caracteristicas */
