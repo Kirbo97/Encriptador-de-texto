@@ -8,7 +8,7 @@ async function loadHTML(id, file) {
 async function cargarPagina() {
     document.body.style.overflow = "hidden";
 
-    await loadHTML("loading", "/Encriptador de Texto/Estructura/carga.html");
+    await loadHTML("loading", "/Encriptador-de-Texto/Estructura/carga.html");
 
     const imagenes = document.images;
 

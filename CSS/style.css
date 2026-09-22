@@ -103,8 +103,6 @@ form h1, #mensaje {
     margin-inline-start: 0px; /* defino la posisiones del texto*/
     margin-inline-end: 0px; /* defino la posisiones del texto*/
     font-weight: bold; /* defino el formato del en negrita*/
-    line-height: 22px;
-    position:static;
 }
 
 /* defino que solo la clase "inicio_form" tendra tendra ciertas caracteristicas */
